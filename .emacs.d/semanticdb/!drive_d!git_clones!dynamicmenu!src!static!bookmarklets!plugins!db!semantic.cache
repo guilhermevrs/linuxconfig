@@ -1,0 +1,16 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "DbScript.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "DbScript.js"
+      :pointmax 12148
+      :fsize 12147
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 25 . 12147) (PAREN_BLOCK 25 . 12148) (PAREN_BLOCK 25 . 12147))))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

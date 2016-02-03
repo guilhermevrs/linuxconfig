@@ -1,0 +1,24 @@
+;; Object utils/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utils/"
+  :tables
+  (list
+    (semanticdb-table "Skinning.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "Skinning.js"
+      :pointmax 884
+      :fsize 883
+      :lastmodtime '(21795 53892 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 21 . 883)))
+    (semanticdb-table "Webservice.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "Webservice.js"
+      :pointmax 9775
+      :fsize 10082
+      :lastmodtime '(21803 54918 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 21 . 9773))))
+  :file "!drive_d!git_clones!dynamicmenu!static!bookmarklets!utils!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

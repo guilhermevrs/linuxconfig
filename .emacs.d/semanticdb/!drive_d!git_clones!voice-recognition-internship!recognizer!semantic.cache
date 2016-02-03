@@ -1,0 +1,20 @@
+;; Object recognizer/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "recognizer/"
+  :tables
+  (list
+    (semanticdb-table "recognizer.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("recognizerReady" variable nil nil [1 21])
+            ("addNewRow" function (:arguments 
+              ( ("result" variable nil (reparse-symbol FormalParameterList) [1367 1373])
+                ("isfinal" variable nil (reparse-symbol FormalParameterList) [1375 1382]))              ) nil [1348 1816]))          
+      :file "recognizer.js"
+      :pointmax 1817
+      :fsize 1877
+      :lastmodtime '(21817 61358 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!voice-recognition-internship!recognizer!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

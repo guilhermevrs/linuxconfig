@@ -1,0 +1,1212 @@
+;; Object first-part/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "first-part/"
+  :tables (list 
+   (semanticdb-table "tools.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [9 53])
+            ("random" include nil nil [9 53])
+            ("math" include nil nil [9 53])
+            ("os" include nil nil [9 53])
+            ("re" include nil nil [9 53])
+            ("subprocess" include nil nil [9 53])
+            ("constructTrainTest" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [112 120])
+                ("prefix" variable nil (reparse-symbol function_parameters) [122 128])
+                ("location" variable nil (reparse-symbol function_parameters) [130 138]))              ) nil [88 469])
+            ("preCrossValidation" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [513 521])
+                ("prefix" variable nil (reparse-symbol function_parameters) [523 529])
+                ("location" variable nil (reparse-symbol function_parameters) [531 539])
+                ("kValues" variable nil (reparse-symbol function_parameters) [553 560]))              ) nil [488 1245])
+            ("posCrossValidation" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [1271 1277])
+                ("location" variable nil (reparse-symbol function_parameters) [1279 1287]))              ) nil [1246 1512])
+            ("removeTrainTestFiles" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [1540 1546])
+                ("location" variable nil (reparse-symbol function_parameters) [1548 1556]))              ) nil [1513 1788])
+            ("perceptronRun" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [1808 1814])
+                ("learningRates" variable nil (reparse-symbol function_parameters) [1816 1829])
+                ("location" variable nil (reparse-symbol function_parameters) [1831 1839]))              ) nil [1789 2826])
+            ("adalineRun" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [2843 2849])
+                ("learningRates" variable nil (reparse-symbol function_parameters) [2851 2864])
+                ("location" variable nil (reparse-symbol function_parameters) [2866 2874]))              ) nil [2827 3843])
+            ("logisticRun" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [3861 3867])
+                ("learningRates" variable nil (reparse-symbol function_parameters) [3869 3882])
+                ("location" variable nil (reparse-symbol function_parameters) [3884 3892]))              ) nil [3844 4897])
+            ("getCrossFiles" function (:arguments 
+              ( ("prefix" variable nil (reparse-symbol function_parameters) [4918 4924])
+                ("location" variable nil (reparse-symbol function_parameters) [4926 4934]))              ) nil [4898 5048])
+            ("getNormalizedFloat" function (:arguments 
+              ( ("rawFloat" variable nil (reparse-symbol function_parameters) [5074 5082]))              ) nil [5049 5270])
+            ("parseError" function (:arguments 
+              ( ("returnString" variable nil (reparse-symbol function_parameters) [5288 5300]))              ) nil [5271 5387])
+            ("executeProgram" function (:arguments 
+              ( ("arguments" variable nil (reparse-symbol function_parameters) [5409 5418]))              ) nil [5388 5514])
+            ("getDataset" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [5531 5539]))              ) nil [5515 5818])
+            ("writeDataToFile" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [5841 5849])
+                ("dataset" variable nil (reparse-symbol function_parameters) [5851 5858])
+                ("ignoreIndex" variable nil (reparse-symbol function_parameters) [5860 5871]))              ) nil [5819 6066])
+            ("chunkify" function (:arguments 
+              ( ("lst" variable nil (reparse-symbol function_parameters) [6080 6083])
+                ("n" variable nil (reparse-symbol function_parameters) [6084 6085]))              ) nil [6067 6165])
+            ("if" code nil nil [6166 6965]))          
+    :file "tools.py"
+    :pointmax 6965
+    :fsize 6964
+    :lastmodtime '(22082 35641 319134 600000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adaline.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("adaline" function
+               (:arguments 
+                  ( ("X" variable
+                       (:pointer 2
+                        :type "double")
+                        nil nil)
+                    ("Y" variable
+                       (:pointer 1
+                        :type "double")
+                        nil nil)
+                    ("w" variable
+                       (:pointer 1
+                        :type "double")
+                        nil nil)
+                    ("m" variable (:type "long int") nil nil)
+                    ("d" variable (:type "long int") nil nil)
+                    ("eta" variable (:type "double") nil nil)
+                    ("T" variable (:type "long int") nil nil))                  
+                :type "void")
+                nil [19 614]))          
+    :file "adaline.c"
+    :pointmax 615
+    :fsize 614
+    :lastmodtime '(22080 10012 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "defs.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [890 908])
+            ("string.h" include (:system-flag t) nil [909 928])
+            ("stdlib.h" include (:system-flag t) nil [929 948])
+            ("fcntl.h" include (:system-flag t) nil [949 967])
+            ("math.h" include (:system-flag t) nil [968 985])
+            ("time.h" include (:system-flag t) nil [986 1003])
+            ("sys/types.h" include (:system-flag t) nil [1004 1026])
+            ("sys/stat.h" include (:system-flag t) nil [1027 1048])
+            ("DMAX" variable (:constant-flag t) nil [1207 1211])
+            ("DMIN" variable (:constant-flag t) nil [1296 1300])
+            ("PI" variable (:constant-flag t) nil [1414 1416])
+            ("ALPHA" variable (:constant-flag t) nil [1446 1451])
+            ("MINETA" variable (:constant-flag t) nil [1468 1474])
+            ("MINTOL" variable (:constant-flag t) nil [1490 1496])
+            ("MAXEXP" variable (:constant-flag t) nil [1510 1516])
+            ("GTOL" variable (:constant-flag t) nil [1531 1535])
+            ("MAXSTR" variable (:constant-flag t) nil [1554 1560])
+            ("LR_PARAM" type
+               (:typedef ("Learning_param" type (:type "struct") nil nil)
+                :superclasses "Learning_param"
+                :type "typedef")
+                nil [1646 2046])
+            ("Learning_param" type
+               (:members 
+                  ( ("eps" variable (:type "double") (reparse-symbol classsubparts) [1680 1693])
+                    ("eta" variable (:type "double") (reparse-symbol classsubparts) [1713 1726])
+                    ("T" variable (:type "long int") (reparse-symbol classsubparts) [1756 1767])
+                    ("K" variable (:type "long int") (reparse-symbol classsubparts) [1807 1818])
+                    ("lambda" variable (:type "double") (reparse-symbol classsubparts) [1878 1894])
+                    ("display" variable (:type "int") (reparse-symbol classsubparts) [1981 1998]))                  
+                :type "struct")
+                nil [1646 2046])
+            ("FEATURE" type
+               (:typedef ("IndxVal" type (:type "struct") nil nil)
+                :superclasses "IndxVal"
+                :type "typedef")
+                nil [2048 2214])
+            ("IndxVal" type
+               (:members 
+                  ( ("ind" variable (:type "long int") (reparse-symbol classsubparts) [2075 2089])
+                    ("val" variable (:type "double") (reparse-symbol classsubparts) [2160 2174]))                  
+                :type "struct")
+                nil [2048 2214])
+            ("SPARSEVECT" type
+               (:typedef ("SV" type (:type "struct") nil nil)
+                :superclasses "SV"
+                :type "typedef")
+                nil [2216 2413])
+            ("SV" type
+               (:members 
+                  ( ("Att" variable
+                       (:pointer 1
+                        :type ("FEATURE" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2238 2252])
+                    ("N" variable (:type "long int") (reparse-symbol classsubparts) [2322 2333]))                  
+                :type "struct")
+                nil [2216 2413])
+            ("nrerror" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2431 2438]))                  
+                :type "void")
+                nil [2418 2439])
+            ("FileScan" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2454 2461])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [2462 2473])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [2474 2485]))                  
+                :type "void")
+                nil [2440 2486])
+            ("Normalize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2502 2512])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2513 2522])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2523 2532]))                  
+                :type "void")
+                nil [2487 2533])
+            ("ConstructTrainTest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2558 2565])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2566 2576])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2577 2586])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2587 2596])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2597 2606])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [2607 2614]))                  
+                :type "void")
+                nil [2534 2615])
+            ("ChrgMatrix" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2632 2639])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2640 2649])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2650 2659])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2660 2670])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2671 2680]))                  
+                :type "void")
+                nil [2616 2681])
+            ("ChrgMatrixUnSup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2703 2710])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2711 2720])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2721 2730])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2731 2741]))                  
+                :type "void")
+                nil [2682 2742])
+            ("lire_commande" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("LR_PARAM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2762 2773])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2774 2781])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2782 2789])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2790 2795])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2796 2804]))                  
+                :type "void")
+                nil [2743 2805])
+            ("lire_commande_kmoyennes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("LR_PARAM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2835 2846])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2847 2854])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2855 2862])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [2863 2867])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2868 2876]))                  
+                :type "void")
+                nil [2806 2877])
+            ("save_params" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2895 2902])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2902 2911])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2911 2920]))                  
+                :type "void")
+                nil [2878 2921])
+            ("load_params" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2939 2946])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2946 2955])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [2955 2964]))                  
+                :type "void")
+                nil [2922 2965])
+            ("save_adaboost_params" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2992 2999])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [2999 3009])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3009 3018])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3019 3028])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3029 3038]))                  
+                :type "void")
+                nil [2966 3039])
+            ("load_adaboost_params" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3066 3073])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3073 3083])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3083 3092])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3093 3102])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3103 3112]))                  
+                :type "void")
+                nil [3040 3113])
+            ("Normalize" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3129 3139])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3140 3149])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3150 3159]))                  
+                :type "void")
+                nil [3114 3160])
+            ("ConstructTrainTest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3185 3192])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3193 3203])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3204 3213])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3214 3223])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3224 3233])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [3234 3241]))                  
+                :type "void")
+                nil [3161 3242])
+            ("lire_commande_CEMss_naiveBayes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("LR_PARAM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3279 3290])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3291 3298])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3299 3306])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3307 3311])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3312 3320]))                  
+                :type "void")
+                nil [3243 3321])
+            ("FileScanSemiSup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3343 3350])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3351 3362])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3363 3374])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3375 3386])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3387 3398])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3399 3410]))                  
+                :type "void")
+                nil [3322 3411])
+            ("ChrgMatrixSemiSup" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3435 3442])
+                    ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3443 3456])
+                    ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3457 3470])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [3471 3482])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3483 3492])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3493 3502]))                  
+                :type "void")
+                nil [3412 3503])
+            ("Standby" function
+               (:prototype-flag t
+                :type "void")
+                nil [3504 3519])
+            ("aide" function
+               (:prototype-flag t
+                :type "void")
+                nil [3520 3532])
+            ("grdcnj" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3580 3590])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3591 3600])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3601 3610])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3611 3620])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3621 3630])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [3631 3638])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3639 3643]))                  
+                :type "void")
+                nil [3568 3644])
+            ("rchln" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3694 3703])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [3704 3711])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3712 3721])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3722 3731])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3732 3741])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3742 3751])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3752 3762])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3763 3772])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3773 3782])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3783 3792]))                  
+                :type "void")
+                nil [3683 3793])
+            ("qsnewton" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3835 3845])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3846 3855])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3856 3865])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3866 3875])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3875 3884])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [3885 3892]))                  
+                :type "void")
+                nil [3821 3893])
+            ("Gradient" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3967 3976])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3977 3987])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3988 3997])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [3998 4007])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4008 4017]))                  
+                :type "double")
+                nil [3950 4018])
+            ("FoncLoss" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4109 4118])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4119 4129])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4130 4139])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4140 4149])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4150 4159]))                  
+                :type "double")
+                nil [4093 4160])
+            ("perceptron" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4208 4218])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4219 4228])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4229 4238])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4239 4248])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4249 4258])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4259 4266])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4267 4276]))                  
+                :type "void")
+                nil [4192 4277])
+            ("MarginPerceptron" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4300 4310])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4311 4320])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4321 4330])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4331 4340])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4341 4350])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4351 4358])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4359 4368])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4369 4376]))                  
+                :type "void")
+                nil [4278 4377])
+            ("winnow" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4418 4428])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4429 4438])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4439 4448])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4449 4458])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4459 4468])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4469 4476])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4477 4486]))                  
+                :type "void")
+                nil [4406 4487])
+            ("RegressionLogistique" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4547 4557])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4558 4567])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4568 4577])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4578 4587])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4588 4597])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4598 4605])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4606 4610]))                  
+                :type "void")
+                nil [4521 4611])
+            ("Boosting" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4655 4665])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4666 4676])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4677 4686])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4687 4696])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4697 4706])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4707 4717])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4718 4727])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4728 4737])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4738 4747])
+                    ("" variable (:type ("LR_PARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4748 4757]))                  
+                :type "long int")
+                nil [4637 4758])
+            ("Kmoyennes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4803 4813])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4814 4823])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4824 4833])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4834 4843])
+                    ("" variable
+                       (:pointer 2
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [4844 4856])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4857 4867])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [4868 4879])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [4880 4887])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [4888 4898])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4899 4903]))                  
+                :type "void")
+                nil [4788 4904])
+            ("CEMss_NaiveBayes" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4964 4977])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [4978 4989])
+                    ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4990 5003])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5004 5013])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5014 5023])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5024 5033])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5034 5043])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [5044 5052])
+                    ("" variable (:type "double") (reparse-symbol arg-sub-list) [5053 5060])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5061 5070])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5071 5075])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5076 5086])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5087 5096]))                  
+                :type "void")
+                nil [4942 5097])
+            ("NaiveBayesTest" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5118 5131])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5132 5145])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5146 5155])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5156 5165])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5166 5175])
+                    ("" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5176 5186])
+                    ("" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [5187 5196]))                  
+                :type "void")
+                nil [5098 5197])
+            ("ChrgMatrixSparseVectors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5227 5234])
+                    ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5235 5248])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5249 5260])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5261 5270]))                  
+                :type "void")
+                nil [5198 5271])
+            ("FileSparseVectors" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5296 5303])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5304 5315])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5316 5327])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5328 5339])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5340 5351]))                  
+                :type "void")
+                nil [5273 5352])
+            ("lire_commande_naiveBayes_Tst" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5387 5394])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5395 5402])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [5403 5407])
+                    ("" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5408 5416]))                  
+                :type "void")
+                nil [5353 5417])
+            ("Allocation" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5435 5442]))                  
+                :type "void")
+                nil [5418 5443])
+            ("KNN" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5454 5467])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5468 5479])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5480 5489])
+                    ("" variable
+                       (:pointer 1
+                        :type ("SPARSEVECT" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5490 5503])
+                    ("" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [5504 5515])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5516 5525])
+                    ("" variable (:type "long int") (reparse-symbol arg-sub-list) [5526 5535])
+                    ("" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5536 5543]))                  
+                :type "void")
+                nil [5445 5544]))          
+    :file "defs.h"
+    :pointmax 5546
+    :fsize 5573
+    :lastmodtime '(22080 10008 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("PI" . ((number "3.14159265358979" 1421 . 1437)))
+          ("MAXSTR" . ((number "1e8" 1564 . 1567)))
+          ("DMAX" (spp-arg-list ("a" "b") 1211 . 1216) . ((semantic-list "(maxarg1=(a),maxarg2=(b), (maxarg1)>(maxarg2) ? (maxarg1) : (maxarg2))" 1217 . 1287)))
+          ("MINETA" . ((number "1.0e-4" 1475 . 1481)))
+          ("MAXEXP" . ((number "400.0" 1517 . 1522)))
+          ("DMIN" (spp-arg-list ("a" "b") 1300 . 1305) . ((semantic-list "(minarg1=(a),minarg2=(b), (minarg1)<(minarg2) ? (minarg1) : (minarg2))" 1306 . 1376)))
+          ("MINTOL" . ((number "1e-7" 1497 . 1501)))
+          ("GTOL" . ((number "1e-3" 1541 . 1545)))
+          ("ALPHA" . ((number "1.0e-4" 1453 . 1459)))
+          )
+
+    )
+   (semanticdb-table "adaline-learn-main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 52]))                  
+                :type "int")
+                nil [21 1960])
+            ("lire_commande" function
+               (:arguments 
+                  ( ("input_params" variable
+                       (:pointer 1
+                        :type ("LR_PARAM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1983 2006])
+                    ("fic_apprentissage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2007 2031])
+                    ("fic_params" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2032 2049])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [2050 2063])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2064 2076]))                  
+                :type "void")
+                nil [1964 2821])
+            ("Standby" function (:type "void") nil [2823 2888])
+            ("aide" function (:type "void") nil [2890 3497]))          
+    :file "adaline-learn-main.c"
+    :pointmax 3498
+    :fsize 3497
+    :lastmodtime '(22081 49937 716108 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "perceptron.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [2 19])
+            ("perceptron" function
+               (:arguments 
+                  ( ("X" variable
+                       (:pointer 2
+                        :type "double")
+                        nil nil)
+                    ("Y" variable
+                       (:pointer 1
+                        :type "double")
+                        nil nil)
+                    ("w" variable
+                       (:pointer 1
+                        :type "double")
+                        nil nil)
+                    ("m" variable (:type "long int") nil nil)
+                    ("d" variable (:type "long int") nil nil)
+                    ("eta" variable (:type "double") nil nil)
+                    ("T" variable (:type "long int") nil nil))                  
+                :type "void")
+                nil [20 648]))          
+    :file "perceptron.c"
+    :pointmax 649
+    :fsize 648
+    :lastmodtime '(22080 10006 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "perceptron-learn-main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [30 39])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [40 52]))                  
+                :type "int")
+                nil [21 1966])
+            ("lire_commande" function
+               (:arguments 
+                  ( ("input_params" variable
+                       (:pointer 1
+                        :type ("LR_PARAM" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1989 2012])
+                    ("fic_apprentissage" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2013 2037])
+                    ("fic_params" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2038 2055])
+                    ("num_args" variable (:type "int") (reparse-symbol arg-sub-list) [2056 2069])
+                    ("args" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2070 2082]))                  
+                :type "void")
+                nil [1970 2827])
+            ("Standby" function (:type "void") nil [2829 2894])
+            ("aide" function (:type "void") nil [2896 3509]))          
+    :file "perceptron-learn-main.c"
+    :pointmax 3510
+    :fsize 3509
+    :lastmodtime '(22082 13692 250638 200000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "perceptron-test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [22 1859]))          
+    :file "perceptron-test.c"
+    :pointmax 1860
+    :fsize 1861
+    :lastmodtime '(22082 15612 885116 400000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "utilitaire.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("FileScan" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [34 49])
+                    ("m" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [50 62])
+                    ("d" variable
+                       (:pointer 1
+                        :type "long int")
+                        (reparse-symbol arg-sub-list) [63 75]))                  
+                :type "void")
+                nil [20 699])
+            ("ChrgMatrix" function
+               (:arguments 
+                  ( ("ficname" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [718 732])
+                    ("m" variable (:type "long int") (reparse-symbol arg-sub-list) [733 744])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [745 756])
+                    ("X" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [757 768])
+                    ("Y" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [769 779]))                  
+                :type "void")
+                nil [702 1405])
+            ("Normalize" function
+               (:arguments 
+                  ( ("X" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1422 1433])
+                    ("m" variable (:type "long int") (reparse-symbol arg-sub-list) [1434 1445])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [1446 1457]))                  
+                :type "void")
+                nil [1407 1688])
+            ("ConstructTrainTest" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1715 1730])
+                    ("X" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1731 1742])
+                    ("Y" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [1743 1753])
+                    ("m" variable (:type "long int") (reparse-symbol arg-sub-list) [1754 1765])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [1766 1777])
+                    ("proportion" variable (:type "double") (reparse-symbol arg-sub-list) [1778 1796]))                  
+                :type "void")
+                nil [1691 3013])
+            ("save_params" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3032 3047])
+                    ("w" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3047 3057])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [3057 3068]))                  
+                :type "void")
+                nil [3015 3296])
+            ("load_params" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3315 3330])
+                    ("w" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3330 3340])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [3340 3351]))                  
+                :type "void")
+                nil [3298 3594])
+            ("save_adaboost_params" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3622 3637])
+                    ("w" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3637 3648])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [3648 3662])
+                    ("T" variable (:type "long int") (reparse-symbol arg-sub-list) [3663 3674])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [3675 3686]))                  
+                :type "void")
+                nil [3596 4039])
+            ("load_adaboost_params" function
+               (:arguments 
+                  ( ("filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4067 4082])
+                    ("w" variable
+                       (:pointer 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4082 4093])
+                    ("alpha" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4093 4107])
+                    ("T" variable (:type "long int") (reparse-symbol arg-sub-list) [4108 4119])
+                    ("d" variable (:type "long int") (reparse-symbol arg-sub-list) [4120 4131]))                  
+                :type "void")
+                nil [4041 4463]))          
+    :file "utilitaire.c"
+    :pointmax 4467
+    :fsize 4466
+    :lastmodtime '(22081 49851 88301 900000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adaline-test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("defs.h" include nil nil [1 18])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") nil nil)
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        nil nil))                  
+                :type "int")
+                nil [22 1853]))          
+    :file "adaline-test.c"
+    :pointmax 1854
+    :fsize 1855
+    :lastmodtime '(22082 34279 188753 200000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("all" function (:arguments ("perceptron-test" "perceptron-learn" "adaline-test" "adaline-learn")) nil [1 66])
+            ("clean" function nil nil [66 145])
+            ("perceptron-learn" function (:arguments ("utilitaire.o" "perceptron.o" "perceptron-learn-main.o")) nil [146 292])
+            ("perceptron-test" function (:arguments ("utilitaire.o" "perceptron-test.o")) nil [293 399])
+            ("adaline-learn" function (:arguments ("utilitaire.o" "adaline.o" "adaline-learn-main.o")) nil [410 538])
+            ("adaline-test" function (:arguments ("utilitaire.o" "adaline-test.o")) nil [539 633])
+            ("%.o" function (:arguments ("%.c")) nil [634 664]))          
+    :file "Makefile"
+    :pointmax 664
+    :fsize 663
+    :lastmodtime '(22082 35145 18236 500000)
+    :unmatched-syntax '((shell-command 645 . 663) (bol 644 . 644) (symbol 52 . 65) (symbol 39 . 51) (symbol 22 . 38) (symbol 6 . 21) (punctuation 4 . 5) (symbol 1 . 4) (bol 1 . 1))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!machine-learning!first-part!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

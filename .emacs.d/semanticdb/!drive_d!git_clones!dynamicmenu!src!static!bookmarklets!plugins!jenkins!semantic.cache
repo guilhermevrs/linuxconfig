@@ -1,0 +1,26 @@
+;; Object jenkins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jenkins/"
+  :tables
+  (list
+    (semanticdb-table "JenkinsPlugin.tpl"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Jenkins Home Page" anchor nil nil [1010 1013])
+            ("JCP repository" anchor nil nil [1139 1142]))          
+      :file "JenkinsPlugin.tpl"
+      :pointmax 694
+      :fsize 3660
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "JenkinsPluginScript.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "JenkinsPluginScript.js"
+      :pointmax 648
+      :fsize 647
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 25 . 647))))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!jenkins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

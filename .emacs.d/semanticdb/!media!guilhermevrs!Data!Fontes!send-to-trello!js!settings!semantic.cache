@@ -1,0 +1,18 @@
+;; Object settings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "settings/"
+  :tables (list 
+   (semanticdb-table "settings.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "settings.js"
+    :pointmax 394
+    :fsize 393
+    :lastmodtime '(21940 64282 464244 900000)
+    :unmatched-syntax '((VARIABLE 85 . 93) (PAREN_BLOCK 104 . 392) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 392) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 392) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 394) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 392) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 368) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 421) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 420) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 362) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 361) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 304) (VAR 16 . 19) (PAREN_BLOCK 45 . 82) (VARIABLE 85 . 93) (PAREN_BLOCK 104 . 305) (VAR 16 . 19) (PAREN_BLOCK 45 . 82))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!send-to-trello!js!settings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

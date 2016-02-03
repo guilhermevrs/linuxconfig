@@ -1,0 +1,17 @@
+# -*- mode: snippet -*-
+# name: a2-testspec
+# key: a2-testspec
+# --
+import {should} from 'chai';
+
+describe('$1', () => {
+    $2
+    beforeEach(() => {
+       $3
+    });
+
+    it('$4', () => {
+        $5
+    });
+});
+$0

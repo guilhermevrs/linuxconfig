@@ -1,0 +1,575 @@
+;; Object special_functions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "special_functions/"
+  :tables (list 
+   (semanticdb-table "sign.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_MATH_TOOLS_SIGN_HPP" variable (:constant-flag t) nil [367 392])
+            ("boost/math/tools/config.hpp" include (:system-flag t) nil [431 469])
+            ("boost/math/special_functions/math_fwd.hpp" include (:system-flag t) nil [470 522])
+            ("boost/math/special_functions/detail/fp_traits.hpp" include (:system-flag t) nil [523 583])
+            ("boost" type
+               (:members 
+                  ( ("math" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("signbit_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [871 875])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [876 901]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [824 935])
+                                    ("signbit_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [988 992])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [993 1019]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [941 1053])
+                                    ("signbit_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1106 1110])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_all_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1111 1141]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1059 1339])
+                                    ("signbit_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "int"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1392 1396])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_leading_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1397 1431]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1345 1630])
+                                    ("changesign_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1704 1708])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1709 1734]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1655 1765])
+                                    ("changesign_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1820 1824])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [1825 1851]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1771 1882])
+                                    ("changesign_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1936 1940])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_all_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [1941 1971]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [1889 2216])
+                                    ("changesign_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type ("T" type (:type "class") nil nil)
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2271 2275])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_leading_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [2276 2310]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [2222 2555]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [620 2559])
+                            ("signbit" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "int"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2615 2619]))                                  )
+                                (reparse-symbol namespacesubparts) [2583 2920])
+                            ("BOOST_NO_MACRO_EXPAND" function
+                               (:arguments 
+                                  ( ("z" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2979 2990]))                                  
+                                :type ("sign" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [2952 3055])
+                            ("changesign" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type ("tools::promote_args::type" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3127 3138]))                                  
+                                :typemodifiers ("typename"))
+                                (reparse-symbol namespacesubparts) [3057 3536])
+                            ("BOOST_NO_MACRO_EXPAND" function
+                               (:arguments 
+                                  ( ("x" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("T" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3649 3660])
+                                    ("y" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("U" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3661 3672]))                                  
+                                :type ("copysign" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [3618 3977]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [602 3980]))                  
+                :type "namespace")
+                nil [585 4000]))          
+    :file "sign.hpp"
+    :pointmax 4060
+    :fsize 4059
+    :lastmodtime '(21413 1117 0 0)
+    :unmatched-syntax '((symbol 3609 . 3613) (punctuation 3608 . 3609) (punctuation 3607 . 3608) (punctuation 3606 . 3607) (symbol 3605 . 3606) (punctuation 3603 . 3604) (symbol 3602 . 3603) (punctuation 3601 . 3602) (symbol 3589 . 3601) (punctuation 3588 . 3589) (punctuation 3587 . 3588) (symbol 3582 . 3587) (TYPENAME 3573 . 3581) (INLINE 3566 . 3572) (punctuation 3564 . 3565) (symbol 3563 . 3564) (CLASS 3557 . 3562) (punctuation 3555 . 3556) (symbol 3554 . 3555) (CLASS 3548 . 3553) (punctuation 3547 . 3548) (TEMPLATE 3538 . 3546) (INT 2948 . 2951) (INLINE 2941 . 2947) (punctuation 2939 . 2940) (symbol 2938 . 2939) (CLASS 2932 . 2937) (punctuation 2931 . 2932) (TEMPLATE 2922 . 2930))
+    :lexical-table 
+        '(("BOOST_MATH_TOOLS_SIGN_HPP")
+          )
+
+    )
+   (semanticdb-table "fpclassify.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_MATH_FPCLASSIFY_HPP" variable (:constant-flag t) nil [312 337])
+            ("math.h" include (:system-flag t) nil [376 393])
+            ("boost/config/no_tr1/cmath.hpp" include (:system-flag t) nil [394 434])
+            ("boost/limits.hpp" include (:system-flag t) nil [435 462])
+            ("boost/math/tools/real_cast.hpp" include (:system-flag t) nil [463 504])
+            ("boost/type_traits/is_floating_point.hpp" include (:system-flag t) nil [505 555])
+            ("boost/math/special_functions/math_fwd.hpp" include (:system-flag t) nil [556 608])
+            ("boost/math/special_functions/detail/fp_traits.hpp" include (:system-flag t) nil [609 669])
+            ("boost" type
+               (:members 
+                  ( ("math_detail" type
+                       (:members 
+                          ( ("is_nan_helper" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3409 3413])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::true_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3414 3438]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3364 3690])
+                            ("is_nan_helper" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3784 3786])
+                                    ("" variable
+                                       (:reference 1
+                                        :constant-flag t
+                                        :type ("boost::false_type" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [3787 3812]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [3739 3833]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3262 3836])
+                    ("math" type
+                       (:members 
+                          ( ("detail" type
+                               (:members 
+                                  ( ("BOOST_NO_MACRO_EXPAND" function
+                                       (:arguments 
+                                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4113 4117])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [4118 4143]))                                          
+                                        :type ("fpclassify_imp" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [4076 5316])
+                                    ("BOOST_NO_MACRO_EXPAND" function
+                                       (:arguments 
+                                          ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5385 5389])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [5390 5416]))                                          
+                                        :type ("fpclassify_imp" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5348 5765])
+                                    ("BOOST_NO_MACRO_EXPAND" function
+                                       (:arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5826 5830])
+                                            ("" variable (:type ("ieee_copy_all_bits_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5831 5854]))                                          
+                                        :type ("fpclassify_imp" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [5789 6511])
+                                    ("BOOST_NO_MACRO_EXPAND" function
+                                       (:arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6572 6576])
+                                            ("" variable (:type ("ieee_copy_leading_bits_tag" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6577 6604]))                                          
+                                        :type ("fpclassify_imp" type (:type "class") nil nil))
+                                        (reparse-symbol namespacesubparts) [6535 7119]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [3855 7442])
+                            ("BOOST_NO_MACRO_EXPAND" function
+                               (:arguments 
+                                  ( ("t" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7528 7532]))                                  
+                                :type ("fpclassify" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [7495 8095])
+                            ("detail" type
+                               (:members 
+                                  ( ("isfinite_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9016 9020])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9021 9046]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [8968 9164])
+                                    ("isfinite_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9218 9222])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [9223 9249]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [9170 9477])
+                                    ("isfinite_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9531 9535])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [9536 9552]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [9483 9785]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [8776 10052])
+                            ("isfinite" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10095 10099]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [10054 10458])
+                            ("detail" type
+                               (:members 
+                                  ( ("isnormal_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11210 11214])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [11215 11240]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [11162 11383])
+                                    ("isnormal_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11437 11441])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [11442 11468]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [11389 11662])
+                                    ("isnormal_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11716 11720])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [11721 11737]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [11668 11998]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [10970 12265])
+                            ("isnormal" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12308 12312]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [12267 12610])
+                            ("detail" type
+                               (:members 
+                                  ( ("isinf_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13293 13297])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [13298 13323]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [13248 13626])
+                                    ("isinf_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13677 13681])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [13682 13708]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [13632 13936])
+                                    ("isinf_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13987 13991])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_all_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [13992 14022]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [13942 14270])
+                                    ("isinf_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14321 14325])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_leading_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [14326 14360]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [14276 14685]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [13062 14946])
+                            ("isinf" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15008 15012]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [14970 15308])
+                            ("detail" type
+                               (:members 
+                                  ( ("isnan_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15985 15989])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("true" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [15990 16015]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [15940 16158])
+                                    ("isnan_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16209 16213])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("generic_tag" type
+                                                     (:template-specifier 
+                                                        ( ("false" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [16214 16240]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [16164 16467])
+                                    ("isnan_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16518 16522])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_all_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16523 16553]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [16473 16800])
+                                    ("isnan_impl" function
+                                       (:template 
+                                          ( ("T" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16851 16855])
+                                            ("" variable
+                                               (:reference 1
+                                                :constant-flag t
+                                                :type ("ieee_copy_leading_bits_tag" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [16856 16890]))                                          
+                                        :typemodifiers ("inline"))
+                                        (reparse-symbol namespacesubparts) [16806 17249]))                                  
+                                :type "namespace")
+                                (reparse-symbol namespacesubparts) [15754 17252])
+                            ("isnan" function
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("x" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17314 17318]))                                  
+                                :typemodifiers ("inline"))
+                                (reparse-symbol namespacesubparts) [17276 17600]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3838 18426]))                  
+                :type "namespace")
+                nil [3090 18446]))          
+    :file "fpclassify.hpp"
+    :pointmax 18504
+    :fsize 18503
+    :lastmodtime '(21413 1117 0 0)
+    :unmatched-syntax '((INT 7491 . 7494) (INLINE 7484 . 7490) (punctuation 7482 . 7483) (symbol 7481 . 7482) (CLASS 7475 . 7480) (punctuation 7474 . 7475) (TEMPLATE 7465 . 7473) (INT 6531 . 6534) (punctuation 6529 . 6530) (symbol 6528 . 6529) (CLASS 6522 . 6527) (punctuation 6521 . 6522) (TEMPLATE 6513 . 6521) (INT 5785 . 5788) (punctuation 5783 . 5784) (symbol 5782 . 5783) (CLASS 5776 . 5781) (punctuation 5775 . 5776) (TEMPLATE 5767 . 5775) (INT 5344 . 5347) (INLINE 5337 . 5343) (punctuation 5335 . 5336) (symbol 5334 . 5335) (CLASS 5328 . 5333) (punctuation 5327 . 5328) (TEMPLATE 5318 . 5326) (INT 4072 . 4075) (INLINE 4065 . 4071) (punctuation 4063 . 4064) (symbol 4062 . 4063) (CLASS 4056 . 4061) (punctuation 4055 . 4056) (TEMPLATE 4046 . 4054))
+    :lexical-table 
+        '(("BOOST_MATH_FPCLASSIFY_HPP")
+          )
+
+    )
+   (semanticdb-table "math_fwd.hpp"
+    :file "math_fwd.hpp"
+    :fsize 57869
+    :lastmodtime '(21413 1117 0 0)
+    )
+   )
+  :file "!usr!include!boost!math!special_functions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

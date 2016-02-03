@@ -1,0 +1,108 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "SimpleExample.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("iostream" include (:system-flag t) nil [770 789])
+            ("stdio.h" include (:system-flag t) nil [790 808])
+            ("stdlib.h" include (:system-flag t) nil [809 828])
+            ("string.h" include (:system-flag t) nil [829 848])
+            ("signal.h" include (:system-flag t) nil [849 868])
+            ("unistd.h" include (:system-flag t) nil [870 889])
+            ("errno.h" include (:system-flag t) nil [890 908])
+            ("sys/types.h" include (:system-flag t) nil [909 931])
+            ("sys/socket.h" include (:system-flag t) nil [932 955])
+            ("netinet/in.h" include (:system-flag t) nil [956 979])
+            ("arpa/inet.h" include (:system-flag t) nil [980 1002])
+            ("netdb.h" include (:system-flag t) nil [1003 1021])
+            ("NatNetLinux/NatNet.h" include (:system-flag t) nil [1023 1054])
+            ("NatNetLinux/CommandListener.h" include (:system-flag t) nil [1055 1095])
+            ("NatNetLinux/FrameListener.h" include (:system-flag t) nil [1096 1134])
+            ("boost/program_options.hpp" include (:system-flag t) nil [1136 1172])
+            ("time.h" include (:system-flag t) nil [1173 1190])
+            ("Globals" type
+               (:members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [1208 1215])
+                    ("localAddress" variable
+                       (:typemodifiers ("static")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1264 1293])
+                    ("serverAddress" variable
+                       (:typemodifiers ("static")
+                        :type ("uint32_t" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1297 1327])
+                    ("run" variable
+                       (:typemodifiers ("static")
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1366 1382]))                  
+                :type "class")
+                nil [1192 1385])
+            ("Globals::localAddress" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [1386 1421])
+            ("Globals::serverAddress" variable (:type ("uint32_t" type (:type "class") nil nil)) nil [1422 1458])
+            ("Globals::run" variable (:type "bool") nil [1459 1485])
+            ("terminate" function
+               (:arguments 
+                  ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [1533 1537]))                  
+                :type "void")
+                nil [1518 1605])
+            ("readOpts" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [1673 1682])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1683 1697]))                  
+                :type "void")
+                nil [1658 2489])
+            ("printFrames" function
+               (:arguments 
+                  ( ("frameListener" variable
+                       (:reference 1
+                        :type ("FrameListener" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2563 2592]))                  
+                :type "void")
+                nil [2546 4770])
+            ("timeStats" function
+               (:arguments 
+                  ( ("frameListener" variable
+                       (:reference 1
+                        :type ("FrameListener" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5059 5088])
+                    ("diffMin_ms" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5089 5113])
+                    ("diffMax_ms" variable
+                       (:constant-flag t
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [5119 5143])
+                    ("bins" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [5149 5165]))                  
+                :type "void")
+                nil [5044 6594])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [6605 6614])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6615 6628]))                  
+                :type "int")
+                nil [6596 8482]))          
+    :file "SimpleExample.cpp"
+    :pointmax 8503
+    :fsize 8482
+    :lastmodtime '(22156 61874 69484 650000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!guilhermevrs!Fontes!NatNetLinux!NatNetLinux!src!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

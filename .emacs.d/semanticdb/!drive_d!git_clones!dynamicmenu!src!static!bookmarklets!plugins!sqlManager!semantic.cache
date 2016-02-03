@@ -1,0 +1,24 @@
+;; Object sqlManager/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sqlManager/"
+  :tables
+  (list
+    (semanticdb-table "SqlManagerScript.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "SqlManagerScript.js"
+      :pointmax 19683
+      :fsize 19682
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 25 . 19682)))
+    (semanticdb-table "SqlManager.tpl"
+      :major-mode 'html-mode
+      :tags nil
+      :file "SqlManager.tpl"
+      :pointmax 16013
+      :fsize 16012
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!sqlManager!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

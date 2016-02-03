@@ -1,0 +1,27 @@
+;; Object test/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "test/"
+  :tables (list 
+   (semanticdb-table "TestSpec.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "TestSpec.js"
+    :pointmax 112
+    :fsize 111
+    :lastmodtime '(21868 45777 551464 400000)
+    :unmatched-syntax '((PAREN_BLOCK 9 . 110))
+    )
+   (semanticdb-table "AppSpec.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "AppSpec.js"
+    :pointmax 158
+    :fsize 157
+    :lastmodtime '(21878 7573 262874 300000)
+    :unmatched-syntax '((VARIABLE 30 . 38) (PAREN_BLOCK 38 . 156) (VARIABLE 30 . 38) (PAREN_BLOCK 38 . 164) (VARIABLE 30 . 38) (PAREN_BLOCK 38 . 136) (VARIABLE 30 . 38) (PAREN_BLOCK 38 . 92))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!send-to-trello!test!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

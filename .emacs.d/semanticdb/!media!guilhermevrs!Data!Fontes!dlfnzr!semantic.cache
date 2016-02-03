@@ -1,0 +1,19 @@
+;; Object dlfnzr/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dlfnzr/"
+  :tables (list 
+   (semanticdb-table "app.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("translate" function nil nil [1 355]))          
+    :file "app.js"
+    :pointmax 674
+    :fsize 474
+    :lastmodtime '(21929 30413 234326 100000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!dlfnzr!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

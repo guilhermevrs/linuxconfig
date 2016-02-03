@@ -1,0 +1,16 @@
+;; Object plugins/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "plugins/"
+  :tables
+  (list
+    (semanticdb-table "PluginScript.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "PluginScript.js"
+      :pointmax 3795
+      :fsize 3794
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 25 . 3794))))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

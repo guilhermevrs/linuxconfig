@@ -1,0 +1,39 @@
+;; Object js/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "js/"
+  :tables
+  (list
+    (semanticdb-table "main.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("columnNames" variable (:default-value "columnNamesPT") nil [241 273])
+            ("currentPage" variable (:default-value "0") nil [274 294])
+            ("toggleLoading" function nil nil [296 364])
+            ("loadResultsUI" function (:arguments 
+              ( ("queryString" variable nil (reparse-symbol FormalParameterList) [389 400]))              ) nil [366 588])
+            ("loadInicialUI" function nil nil [590 772])
+            ("loadTableResults" function (:arguments 
+              ( ("jsonStr" variable nil (reparse-symbol FormalParameterList) [800 807]))              ) nil [774 1462])
+            ("populateWithObject" function (:arguments 
+              ( ("obj" variable nil (reparse-symbol FormalParameterList) [1492 1495]))              ) nil [1464 1874])
+            ("clearTableResults" function nil nil [1876 1998])
+            ("getAllResults" function (:arguments 
+              ( ("qParam" variable nil (reparse-symbol FormalParameterList) [2023 2029]))              ) nil [2000 2659])
+            ("getParameterByName" function (:arguments 
+              ( ("name" variable nil (reparse-symbol FormalParameterList) [2689 2693]))              ) nil [2661 2939])
+            ("generateGraph" function nil nil [2941 3569])
+            ("getGraphData" function nil nil [3571 4186])
+            ("getCSV" function nil nil [4188 4498])
+            ("toggleColumn" function (:arguments 
+              ( ("colName" variable nil (reparse-symbol FormalParameterList) [4522 4529]))              ) nil [4500 4782])
+            ("prepareFilters" function nil nil [4784 4861])
+            ("prepareRangeFilters" function nil nil [4863 6285])
+            ("prepareOptionFilters" function nil nil [6287 7673]))          
+      :file "main.js"
+      :pointmax 9602
+      :fsize 9963
+      :lastmodtime '(21752 4616 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!childes-search!source!csdb!js!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

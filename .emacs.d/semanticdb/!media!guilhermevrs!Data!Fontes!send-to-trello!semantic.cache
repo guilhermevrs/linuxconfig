@@ -1,0 +1,80 @@
+;; Object send-to-trello/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "send-to-trello/"
+  :tables (list 
+   (semanticdb-table "karma.conf.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "karma.conf.js"
+    :pointmax 1848
+    :fsize 1847
+    :lastmodtime '(22025 50359 711758 0)
+    :unmatched-syntax '((FUNCTION 99 . 107) (PAREN_BLOCK 107 . 115))
+    )
+   (semanticdb-table "package.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "package.json"
+    :pointmax 838
+    :fsize 837
+    :lastmodtime '(21871 25972 29828 300000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gulp.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "gulp.js"
+    :pointmax 97
+    :fsize 96
+    :lastmodtime '(21868 45826 700676 800000)
+    :unmatched-syntax '((DOT 88 . 89) (VAR 60 . 63) (PAREN_BLOCK 79 . 88) (PAREN_BLOCK 44 . 58) (COMMA 27 . 28) (PAREN_BLOCK 19 . 27) (DOT 88 . 89) (VAR 60 . 63) (PAREN_BLOCK 79 . 88) (PAREN_BLOCK 44 . 58) (COMMA 27 . 28) (PAREN_BLOCK 19 . 27) (VARIABLE 132 . 136) (PAREN_BLOCK 141 . 264) (DOT 88 . 89) (VAR 60 . 63) (PAREN_BLOCK 79 . 88) (PAREN_BLOCK 44 . 58) (COMMA 27 . 28) (PAREN_BLOCK 19 . 27))
+    )
+   (semanticdb-table "manifest.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "manifest.json"
+    :pointmax 749
+    :fsize 748
+    :lastmodtime '(21941 2769 633356 200000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "popup.js"
+    :major-mode 'js-mode
+    :tags 
+        '( ("getCurrentTabUrl" function (:arguments 
+              ( ("callback" variable nil (reparse-symbol FormalParameterList) [326 334]))              ) nil [300 1764])
+            ("getImageUrl" function (:arguments 
+              ( ("searchTerm" variable nil (reparse-symbol FormalParameterList) [2166 2176])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [2178 2186])
+                ("errorCallback" variable nil (reparse-symbol FormalParameterList) [2188 2201]))              ) nil [2145 3512])
+            ("renderStatus" function (:arguments 
+              ( ("statusText" variable nil (reparse-symbol FormalParameterList) [3536 3546]))              ) nil [3514 3613]))          
+    :file "popup.js"
+    :pointmax 4591
+    :fsize 4590
+    :lastmodtime '(21868 47626 675447 900000)
+    :unmatched-syntax '((VARIABLE 3615 . 3623) (PAREN_BLOCK 3640 . 4589))
+    )
+   (semanticdb-table "bower.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "bower.json"
+    :pointmax 465
+    :fsize 584
+    :lastmodtime '(21941 2812 911781 300000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "travis.karma.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "travis.karma.js"
+    :pointmax 1849
+    :fsize 1848
+    :lastmodtime '(21896 37765 313789 700000)
+    :unmatched-syntax '((FUNCTION 99 . 107) (PAREN_BLOCK 107 . 115))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!send-to-trello!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

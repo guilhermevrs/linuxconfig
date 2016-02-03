@@ -1,0 +1,46 @@
+;; Object db/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "db/"
+  :tables
+  (list
+    (semanticdb-table "db.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "db.js"
+      :pointmax 785
+      :fsize 810
+      :lastmodtime '(21769 32538 0 0)
+      :unmatched-syntax '((FUNCTION 12 . 20) (PAREN_BLOCK 20 . 22)))
+    (semanticdb-table "trainActionInput.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "trainActionInput.json"
+      :pointmax 31363
+      :fsize 31363
+      :lastmodtime '(21787 49427 0 0)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 31362)))
+    (semanticdb-table "trainEntityInput.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "trainEntityInput.json"
+      :pointmax 3125
+      :fsize 3125
+      :lastmodtime '(21788 1894 0 0)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 3124)))
+    (semanticdb-table "trainEntityOutput.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "trainEntityOutput.json"
+      :pointmax 1323
+      :fsize 1323
+      :lastmodtime '(21788 1937 0 0)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 1322)))
+    (semanticdb-table "trainSingleNetworkWithoutConfidence.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "trainSingleNetworkWithoutConfidence.json"
+      :pointmax 45711
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!voice-recognition-internship!okard!db!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

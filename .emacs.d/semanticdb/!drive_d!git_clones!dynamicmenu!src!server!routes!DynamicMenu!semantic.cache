@@ -1,0 +1,24 @@
+;; Object DynamicMenu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "DynamicMenu/"
+  :tables
+  (list
+    (semanticdb-table "CouchDB.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("getData" function (:arguments 
+              ( ("req" variable nil (reparse-symbol FormalParameterList) [2624 2627])
+                ("res" variable nil (reparse-symbol FormalParameterList) [2629 2632])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [2633 2641]))              ) nil [2607 5476])
+            ("putMetrics" function (:arguments 
+              ( ("req" variable nil (reparse-symbol FormalParameterList) [5498 5501])
+                ("res" variable nil (reparse-symbol FormalParameterList) [5503 5506])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [5508 5516]))              ) nil [5478 7832]))          
+      :file "CouchDB.js"
+      :pointmax 7861
+      :fsize 7860
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((VAR 1731 . 1734) (BRACE_BLOCK 1747 . 1892) (SEMICOLON 1892 . 1893) (VAR 1895 . 1898) (FUNCTION 1909 . 1917) (PAREN_BLOCK 1918 . 1928) (ELSE 1023 . 1027) (IF 707 . 709) (PAREN_BLOCK 710 . 749) (VAR 422 . 425) (PAREN_BLOCK 445 . 704) (VAR 336 . 339) (PAREN_BLOCK 367 . 376) (VAR 291 . 294) (PAREN_BLOCK 317 . 334) (VAR 259 . 262) (PAREN_BLOCK 279 . 289) (VAR 227 . 230) (PAREN_BLOCK 247 . 257) (VAR 203 . 206) (PAREN_BLOCK 219 . 225) (VAR 175 . 178) (PAREN_BLOCK 193 . 201) (VAR 145 . 148) (PAREN_BLOCK 164 . 173) (VAR 119 . 122) (PAREN_BLOCK 136 . 143) (VAR 93 . 96) (PAREN_BLOCK 110 . 117) (VAR 59 . 62) (PAREN_BLOCK 80 . 91) (VAR 15 . 18) (PAREN_BLOCK 35 . 56))))
+  :file "!drive_d!git_clones!dynamicmenu!src!server!routes!DynamicMenu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

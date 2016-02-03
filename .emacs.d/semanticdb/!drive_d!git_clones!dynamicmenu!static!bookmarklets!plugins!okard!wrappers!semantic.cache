@@ -1,0 +1,70 @@
+;; Object wrappers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wrappers/"
+  :tables
+  (list
+    (semanticdb-table "OKSpeech.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKSpeech.js"
+      :pointmax 6287
+      :fsize 6486
+      :lastmodtime '(21821 61950 0 0)
+      :unmatched-syntax '((VARIABLE 6040 . 6046) (VARIABLE 6069 . 6073) (PAREN_BLOCK 6089 . 6285) (FUNCTION 1224 . 1232) (PAREN_BLOCK 1232 . 1241) (VARIABLE 5982 . 5988) (VARIABLE 6011 . 6015) (PAREN_BLOCK 6031 . 6227) (FUNCTION 1224 . 1232) (PAREN_BLOCK 1232 . 1241)))
+    (semanticdb-table "OKNeural.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKNeural.js"
+      :pointmax 4558
+      :fsize 4718
+      :lastmodtime '(21803 58406 0 0)
+      :unmatched-syntax '((ELSE 4516 . 4520) (IF 4022 . 4024) (PAREN_BLOCK 4024 . 4086) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582)))
+    (semanticdb-table "OKRecognizer.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKRecognizer.js"
+      :pointmax 20699
+      :fsize 21206
+      :lastmodtime '(21826 13102 0 0)
+      :unmatched-syntax '((VARIABLE 20353 . 20359) (VARIABLE 20390 . 20394) (PAREN_BLOCK 20410 . 20697) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534)))
+    (semanticdb-table "brainlib.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "brainlib.js"
+      :pointmax 19186
+      :fsize 19146
+      :lastmodtime '(21803 54918 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "OKNeuralWorker.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("loadScript" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [271 276]))              ) nil [251 388])
+            ("train" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [405 410]))              ) nil [390 775])
+            ("postProgress" function (:arguments 
+              ( ("progress" variable nil (reparse-symbol FormalParameterList) [799 807]))              ) nil [777 886]))          
+      :file "OKNeuralWorker.js"
+      :pointmax 887
+      :fsize 923
+      :lastmodtime '(21795 53892 0 0)
+      :unmatched-syntax '((FUNCTION 13 . 21) (PAREN_BLOCK 21 . 28)))
+    (semanticdb-table "OKHeuristics.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKHeuristics.js"
+      :pointmax 6610
+      :fsize 6828
+      :lastmodtime '(21795 53892 0 0)
+      :unmatched-syntax '((VARIABLE 6321 . 6327) (VARIABLE 6357 . 6361) (PAREN_BLOCK 6377 . 6608) (FUNCTION 95 . 103) (PAREN_BLOCK 103 . 105)))
+    (semanticdb-table "OKPhonetics.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKPhonetics.js"
+      :pointmax 2873
+      :fsize 2959
+      :lastmodtime '(21826 13102 0 0)
+      :unmatched-syntax '((VARIABLE 2617 . 2623) (VARIABLE 2652 . 2656) (PAREN_BLOCK 2672 . 2871) (FUNCTION 176 . 184) (PAREN_BLOCK 184 . 212))))
+  :file "!drive_d!git_clones!dynamicmenu!static!bookmarklets!plugins!okard!wrappers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

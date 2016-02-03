@@ -1,0 +1,37 @@
+;; Object recording-tool/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "recording-tool/"
+  :tables
+  (list
+    (semanticdb-table "app.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("upload" function (:arguments 
+              ( ("request" variable nil (reparse-symbol FormalParameterList) [877 884])
+                ("response" variable nil (reparse-symbol FormalParameterList) [886 894]))              ) nil [861 1015])
+            ("_upload" function (:arguments 
+              ( ("file" variable nil (reparse-symbol FormalParameterList) [1035 1039]))              ) nil [1018 1659]))          
+      :file "app.js"
+      :pointmax 1845
+      :fsize 1910
+      :lastmodtime '(21750 57539 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "config.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.js"
+      :pointmax 55
+      :fsize 56
+      :lastmodtime '(21749 45032 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "index.html"
+      :major-mode 'js-mode
+      :tags nil
+      :file "index.html"
+      :pointmax 1083
+      :fsize 1092
+      :lastmodtime '(21749 57811 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!voice-recognition-internship!recording-tool!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

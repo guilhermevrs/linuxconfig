@@ -1,0 +1,58 @@
+;; Object public/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "public/"
+  :tables
+  (list
+    (semanticdb-table "client.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("currentIndex" variable (:default-value "-") nil [1 23])
+            ("recordRTC" variable nil nil [24 38])
+            ("isFirefox" variable (:default-value "!!") nil [39 83])
+            ("isRecording" variable (:default-value "false") nil [84 108])
+            ("toggleObject" function (:arguments 
+              ( ("id" variable nil (reparse-symbol FormalParameterList) [132 134])
+                ("show" variable nil (reparse-symbol FormalParameterList) [136 140]))              ) nil [110 286])
+            ("toggleRecordContainer" function (:arguments 
+              ( ("show" variable nil (reparse-symbol FormalParameterList) [319 323]))              ) nil [288 374])
+            ("toggleStartButton" function (:arguments 
+              ( ("show" variable nil (reparse-symbol FormalParameterList) [403 407]))              ) nil [376 447])
+            ("toggleFinishMessage" function (:arguments 
+              ( ("show" variable nil (reparse-symbol FormalParameterList) [478 482]))              ) nil [449 530])
+            ("toggleCommandLabel" function (:arguments 
+              ( ("show" variable nil (reparse-symbol FormalParameterList) [560 564]))              ) nil [532 606])
+            ("enableRecording" function (:arguments 
+              ( ("enableRecord" variable nil (reparse-symbol FormalParameterList) [633 645]))              ) nil [608 1014])
+            ("startRecording" function nil nil [1016 1269])
+            ("startMedia" function (:arguments 
+              ( ("callback" variable nil (reparse-symbol FormalParameterList) [1291 1299]))              ) nil [1271 1777])
+            ("finishRecording" function nil nil [1779 1953])
+            ("nextCommand" function nil nil [1955 2224])
+            ("recordStop" function nil nil [2226 2301])
+            ("record" function nil nil [2303 2383])
+            ("stopRecord" function nil nil [2385 2692])
+            ("postFiles" function (:arguments 
+              ( ("audioDataURL" variable nil (reparse-symbol FormalParameterList) [2713 2725])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [2727 2735]))              ) nil [2694 3112])
+            ("xhr" function (:arguments 
+              ( ("url" variable nil (reparse-symbol FormalParameterList) [3128 3131])
+                ("data" variable nil (reparse-symbol FormalParameterList) [3133 3137])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [3139 3147]))              ) nil [3115 3483])
+            ("countdownTimer" function (:arguments 
+              ( ("seconds" variable nil (reparse-symbol FormalParameterList) [3509 3516]))              ) nil [3485 3925]))          
+      :file "client.js"
+      :pointmax 3926
+      :fsize 4072
+      :lastmodtime '(21760 23077 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "commands.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "commands.js"
+      :pointmax 545
+      :fsize 572
+      :lastmodtime '(21760 25499 0 0)
+      :unmatched-syntax '((BRACK_BLOCK 213 . 543) (BRACK_BLOCK 213 . 539) (BRACK_BLOCK 213 . 539) (BRACK_BLOCK 213 . 548) (BRACK_BLOCK 213 . 546) (BRACK_BLOCK 213 . 529) (BRACK_BLOCK 213 . 528) (BRACK_BLOCK 213 . 525) (BRACK_BLOCK 213 . 523) (BRACK_BLOCK 213 . 513) (BRACK_BLOCK 213 . 498) (BRACK_BLOCK 213 . 517) (CLOSE_SQ_BRACKETS 511 . 512) (COLON 497 . 498) (STRING 457 . 468) (COLON 468 . 469) (COLON 436 . 437) (COLON 409 . 410) (COLON 389 . 390) (COLON 369 . 370) (COLON 349 . 350) (COLON 329 . 330) (COLON 308 . 309) (COMMA 294 . 295) (END_BLOCK 293 . 294) (COLON 284 . 285) (COMMA 274 . 275) (END_BLOCK 273 . 274) (COLON 265 . 266) (COMMA 252 . 253) (BRACK_BLOCK 213 . 252) (BRACK_BLOCK 213 . 511) (BRACK_BLOCK 213 . 497) (BRACK_BLOCK 213 . 495) (BRACK_BLOCK 213 . 496) (BRACK_BLOCK 213 . 483) (BRACK_BLOCK 213 . 476) (BRACK_BLOCK 213 . 463) (BRACK_BLOCK 213 . 452) (BRACK_BLOCK 213 . 446) (BRACK_BLOCK 213 . 425) (BRACK_BLOCK 213 . 423) (BRACK_BLOCK 213 . 417) (BRACK_BLOCK 213 . 410) (BRACK_BLOCK 213 . 402) (BRACK_BLOCK 213 . 396) (BRACK_BLOCK 213 . 395) (BRACK_BLOCK 213 . 390) (BRACK_BLOCK 213 . 362) (BRACK_BLOCK 213 . 342) (BRACK_BLOCK 213 . 341))))
+  :file "!drive_d!git_clones!voice-recognition-internship!recording-tool!public!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

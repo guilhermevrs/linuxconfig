@@ -1,0 +1,11 @@
+[alias]
+	st = status -s
+[user]
+	name = guilhermevrs
+	email = guilhermevrs@gmail.com
+[push]
+	default = simple
+[merge]
+	tool = meld
+[diff]
+	tool = meld

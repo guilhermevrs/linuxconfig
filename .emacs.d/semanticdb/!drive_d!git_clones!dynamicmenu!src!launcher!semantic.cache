@@ -1,0 +1,24 @@
+;; Object launcher/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "launcher/"
+  :tables
+  (list
+    (semanticdb-table "ARD-DynamicMenu.user.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "ARD-DynamicMenu.user.js"
+      :pointmax 6180
+      :fsize 6179
+      :lastmodtime '(21780 12313 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 6168 . 6178) (PAREN_BLOCK 1603 . 6168) (PAREN_BLOCK 6093 . 6103) (PAREN_BLOCK 1603 . 6093) (PAREN_BLOCK 6128 . 6138) (PAREN_BLOCK 1603 . 6128)))
+    (semanticdb-table "dispatcher.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "dispatcher.js"
+      :pointmax 2229
+      :fsize 2228
+      :lastmodtime '(21780 12106 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 2217 . 2227) (PAREN_BLOCK 310 . 2217))))
+  :file "!drive_d!git_clones!dynamicmenu!src!launcher!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

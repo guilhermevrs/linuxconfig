@@ -1,0 +1,17 @@
+;; Object PFE Rapport/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "PFE Rapport/"
+  :tables
+  (list
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("PFE.tex")) nil [1 32]))          
+      :file "makefile"
+      :pointmax 32
+      :fsize 33
+      :lastmodtime '(21733 39697 0 0)
+      :unmatched-syntax '((shell-command 15 . 31) (bol 14 . 14))))
+  :file "!drive_d!Userfiles!gvieiraschwade!Documents!PFE Rapport!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

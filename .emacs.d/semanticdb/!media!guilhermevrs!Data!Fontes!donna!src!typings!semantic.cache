@@ -1,0 +1,45 @@
+;; Object typings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "typings/"
+  :tables (list 
+   (semanticdb-table "_custom.d.ts"
+    :major-mode 'js-mode
+    :tags nil
+    :file "_custom.d.ts"
+    :pointmax 139
+    :fsize 138
+    :lastmodtime '(22111 19192 44967 700000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "webpack.d.ts"
+    :major-mode 'js-mode
+    :tags nil
+    :file "webpack.d.ts"
+    :pointmax 140
+    :fsize 139
+    :lastmodtime '(22090 11055 436080 0)
+    :unmatched-syntax '((VARIABLE 115 . 122) (VAR 123 . 126) (COLON 133 . 134) (VARIABLE 90 . 97) (VAR 98 . 101) (COLON 108 . 109) (VARIABLE 59 . 66) (VAR 67 . 70) (COLON 80 . 81) (VARIABLE 27 . 34) (VAR 35 . 38) (COLON 49 . 50) (VAR 9 . 12) (COLON 20 . 21))
+    )
+   (semanticdb-table "browser.d.ts"
+    :major-mode 'js-mode
+    :tags nil
+    :file "browser.d.ts"
+    :pointmax 154
+    :fsize 153
+    :lastmodtime '(22090 11055 435920 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "chai.d.ts"
+    :major-mode 'js-mode
+    :tags nil
+    :file "chai.d.ts"
+    :pointmax 12421
+    :fsize 12420
+    :lastmodtime '(22109 40195 11825 700000)
+    :unmatched-syntax '((VARIABLE 454 . 460) (VARIABLE 461 . 465) (BRACE_BLOCK 466 . 12288) (VARIABLE 12290 . 12297) (VAR 12298 . 12301) (COLON 12306 . 12307))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!donna!src!typings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

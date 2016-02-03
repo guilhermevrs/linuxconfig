@@ -1,0 +1,70 @@
+;; Object wrappers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wrappers/"
+  :tables
+  (list
+    (semanticdb-table "OKBrain.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKBrain.js"
+      :pointmax 1493
+      :fsize 1558
+      :lastmodtime '(21790 15288 0 0)
+      :unmatched-syntax '((VARIABLE 1165 . 1171) (VARIABLE 1192 . 1196) (PAREN_BLOCK 1212 . 1491) (FUNCTION 92 . 100) (PAREN_BLOCK 100 . 102) (VARIABLE 1164 . 1170) (VARIABLE 1191 . 1195) (PAREN_BLOCK 1211 . 1490) (FUNCTION 92 . 100) (PAREN_BLOCK 100 . 102)))
+    (semanticdb-table "OKHeuristics.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKHeuristics.js"
+      :pointmax 6610
+      :fsize 6828
+      :lastmodtime '(21790 15288 0 0)
+      :unmatched-syntax '((VARIABLE 6321 . 6327) (VARIABLE 6357 . 6361) (PAREN_BLOCK 6377 . 6608) (FUNCTION 95 . 103) (PAREN_BLOCK 103 . 105) (VARIABLE 39 . 43) (PAREN_BLOCK 59 . 290) (VARIABLE 6240 . 6246) (VARIABLE 6276 . 6280) (PAREN_BLOCK 6296 . 6527) (FUNCTION 95 . 103) (PAREN_BLOCK 103 . 105)))
+    (semanticdb-table "OKNeural.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKNeural.js"
+      :pointmax 3726
+      :fsize 3863
+      :lastmodtime '(21790 15288 0 0)
+      :unmatched-syntax '((VARIABLE 3364 . 3370) (VARIABLE 3393 . 3397) (PAREN_BLOCK 3413 . 3724) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (VARIABLE 3364 . 3370) (VARIABLE 3393 . 3397) (PAREN_BLOCK 3413 . 3724) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) \.\.\.))
+    (semanticdb-table "OKNeuralWorker.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("loadScript" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [271 276]))              ) nil [251 388])
+            ("train" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [405 410]))              ) nil [390 775])
+            ("postProgress" function (:arguments 
+              ( ("progress" variable nil (reparse-symbol FormalParameterList) [799 807]))              ) nil [777 886]))          
+      :file "OKNeuralWorker.js"
+      :pointmax 887
+      :fsize 923
+      :lastmodtime '(21790 15288 0 0)
+      :unmatched-syntax '((FUNCTION 13 . 21) (PAREN_BLOCK 21 . 28)))
+    (semanticdb-table "OKRecognizer.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKRecognizer.js"
+      :pointmax 11933
+      :fsize 12222
+      :lastmodtime '(21790 18161 0 0)
+      :unmatched-syntax '((VARIABLE 11674 . 11680) (VARIABLE 11711 . 11715) (PAREN_BLOCK 11731 . 11931) (FUNCTION 480 . 488) (PAREN_BLOCK 488 . 529) (VARIABLE 11660 . 11666) (VARIABLE 11697 . 11701) (PAREN_BLOCK 11717 . 11917) (FUNCTION 480 . 488) (PAREN_BLOCK 488 . 529)))
+    (semanticdb-table "OKSpeech.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKSpeech.js"
+      :pointmax 5629
+      :fsize 5818
+      :lastmodtime '(21790 36287 0 0)
+      :unmatched-syntax '((VARIABLE 5382 . 5388) (VARIABLE 5411 . 5415) (PAREN_BLOCK 5431 . 5627) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907) (VARIABLE 5435 . 5441) (VARIABLE 5464 . 5468) (PAREN_BLOCK 5484 . 5680) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907) (VARIABLE 5488 . 5494) (VARIABLE 5517 . 5521) (PAREN_BLOCK 5537 . 5733) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907) (VARIABLE 5449 . 5455) (VARIABLE 5478 . 5482) (PAREN_BLOCK 5498 . 5694) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907) (VARIABLE 5435 . 5441) (VARIABLE 5464 . 5468) (PAREN_BLOCK 5484 . 5680) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907) (VARIABLE 5382 . 5388) (VARIABLE 5411 . 5415) (PAREN_BLOCK 5431 . 5627) (FUNCTION 890 . 898) (PAREN_BLOCK 898 . 907)))
+    (semanticdb-table "brainlib.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "brainlib.js"
+      :pointmax 19022
+      :fsize 19035
+      :lastmodtime '(21790 15288 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!okard!wrappers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

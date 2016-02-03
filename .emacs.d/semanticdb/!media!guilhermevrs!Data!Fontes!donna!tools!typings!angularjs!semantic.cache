@@ -1,0 +1,18 @@
+;; Object angularjs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "angularjs/"
+  :tables (list 
+   (semanticdb-table "angular.d.ts"
+    :major-mode 'js-mode
+    :tags nil
+    :file "angular.d.ts"
+    :pointmax 80546
+    :fsize 80551
+    :lastmodtime '(22064 61556 226770 400000)
+    :unmatched-syntax '((VAR 257 . 260) (COLON 268 . 269))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!donna!tools!typings!angularjs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

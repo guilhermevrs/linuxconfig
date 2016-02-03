@@ -1,0 +1,63 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "abi_prefix.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_CONFIG_ABI_PREFIX_HPP" variable (:constant-flag t) nil [357 384])
+            ("boost/config.hpp" include (:system-flag t) nil [474 501]))          
+    :file "abi_prefix.hpp"
+    :pointmax 699
+    :fsize 698
+    :lastmodtime '(21413 1115 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_CONFIG_ABI_PREFIX_HPP")
+          )
+
+    )
+   (semanticdb-table "abi_suffix.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "abi_suffix.hpp"
+    :pointmax 782
+    :fsize 781
+    :lastmodtime '(21413 1115 0 0)
+    :unmatched-syntax '((symbol 553 . 556) (punctuation 552 . 553) (symbol 542 . 552) (punctuation 541 . 542) (symbol 535 . 541) (punctuation 534 . 535) (symbol 529 . 534) (symbol 523 . 528) (symbol 518 . 522) (symbol 515 . 517) (symbol 510 . 514) (symbol 505 . 509) (symbol 501 . 504) (punctuation 500 . 501) (symbol 490 . 500) (punctuation 489 . 490) (symbol 483 . 489) (punctuation 482 . 483) (symbol 477 . 482) (symbol 470 . 476) (symbol 464 . 469) (punctuation 462 . 463))
+    )
+   (semanticdb-table "requires_threads.hpp"
+    :file "requires_threads.hpp"
+    :fsize 3507
+    :lastmodtime '(21413 1115 0 0)
+    )
+   (semanticdb-table "auto_link.hpp"
+    :file "auto_link.hpp"
+    :fsize 14268
+    :lastmodtime '(21413 1115 0 0)
+    )
+   (semanticdb-table "select_compiler_config.hpp"
+    :file "select_compiler_config.hpp"
+    :fsize 3701
+    :lastmodtime '(21413 1115 0 0)
+    )
+   (semanticdb-table "select_stdlib_config.hpp"
+    :file "select_stdlib_config.hpp"
+    :fsize 2984
+    :lastmodtime '(21413 1115 0 0)
+    )
+   (semanticdb-table "select_platform_config.hpp"
+    :file "select_platform_config.hpp"
+    :fsize 3223
+    :lastmodtime '(21413 1115 0 0)
+    )
+   (semanticdb-table "suffix.hpp"
+    :file "suffix.hpp"
+    :fsize 32959
+    :lastmodtime '(21413 1115 0 0)
+    )
+   )
+  :file "!usr!include!boost!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

@@ -1,0 +1,97 @@
+;; Object posix_time/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "posix_time/"
+  :tables (list 
+   (semanticdb-table "posix_time_types.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("POSIX_TIME_TYPES_HPP___" variable (:constant-flag t) nil [305 328])
+            ("boost/date_time/time_clock.hpp" include nil nil [330 371])
+            ("boost/date_time/microsec_time_clock.hpp" include nil nil [372 422])
+            ("boost/date_time/posix_time/ptime.hpp" include nil nil [423 470])
+            ("boost/date_time/posix_time/posix_time_duration.hpp" include nil nil [598 659])
+            ("boost/date_time/posix_time/posix_time_system.hpp" include nil nil [660 719])
+            ("boost/date_time/posix_time/time_period.hpp" include nil nil [720 773])
+            ("boost/date_time/time_iterator.hpp" include nil nil [774 818])
+            ("boost/date_time/dst_rules.hpp" include nil nil [819 859])
+            ("boost" type
+               (:members 
+                  ( ("posix_time" type
+                       (:members 
+                          ( ("time_iterator" type
+                               (:typedef ("date_time::time_itr" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "date_time::time_itr"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1083 1132])
+                            ("second_clock" type
+                               (:typedef ("date_time::second_clock" type
+                                     (:template-specifier 
+                                        ( ("ptime" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "date_time::second_clock"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1223 1275])
+                            ("no_dst" type
+                               (:typedef ("date_time::null_dst_rules" type
+                                     (:template-specifier 
+                                        ( ("ptime::date_type" type nil nil nil)
+                                          ("time_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "date_time::null_dst_rules"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1546 1620])
+                            ("us_dst" type
+                               (:typedef ("date_time::us_dst_rules" type
+                                     (:template-specifier 
+                                        ( ("ptime::date_type" type nil nil nil)
+                                          ("time_duration" type nil nil nil))                                        
+                                      :type "class")
+                                      nil nil)
+                                :superclasses "date_time::us_dst_rules"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [1685 1757]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [980 1761]))                  
+                :type "namespace")
+                nil [861 1763]))          
+    :file "posix_time_types.hpp"
+    :pointmax 1799
+    :fsize 1798
+    :lastmodtime '(21413 1117 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("POSIX_TIME_TYPES_HPP___")
+          )
+
+    )
+   (semanticdb-table "ptime.hpp"
+    :file "ptime.hpp"
+    :fsize 2130
+    :lastmodtime '(21413 1117 0 0)
+    )
+   (semanticdb-table "posix_time_duration.hpp"
+    :file "posix_time_duration.hpp"
+    :fsize 1976
+    :lastmodtime '(21413 1117 0 0)
+    )
+   (semanticdb-table "posix_time_system.hpp"
+    :file "posix_time_system.hpp"
+    :fsize 1201
+    :lastmodtime '(21413 1117 0 0)
+    )
+   (semanticdb-table "time_period.hpp"
+    :file "time_period.hpp"
+    :fsize 737
+    :lastmodtime '(21413 1117 0 0)
+    )
+   )
+  :file "!usr!include!boost!date_time!posix_time!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

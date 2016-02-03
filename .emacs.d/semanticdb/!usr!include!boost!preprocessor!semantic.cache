@@ -1,0 +1,49 @@
+;; Object preprocessor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "preprocessor/"
+  :tables (list 
+   (semanticdb-table "iterate.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ITERATE_HPP" variable (:constant-flag t) nil [652 682])
+            ("boost/preprocessor/iteration/iterate.hpp" include (:system-flag t) nil [685 737]))          
+    :file "iterate.hpp"
+    :pointmax 748
+    :fsize 747
+    :lastmodtime '(21413 1116 0 0)
+    :unmatched-syntax '((punctuation 738 . 739) (punctuation 683 . 684) (punctuation 601 . 602) (punctuation 543 . 544) (punctuation 541 . 542) (punctuation 1 . 2))
+    :lexical-table 
+        '(("BOOST_PREPROCESSOR_ITERATE_HPP")
+          )
+
+    )
+   (semanticdb-table "enum.hpp"
+    :file "enum.hpp"
+    :fsize 739
+    :lastmodtime '(21413 1116 0 0)
+    )
+   (semanticdb-table "enum_params.hpp"
+    :file "enum_params.hpp"
+    :fsize 760
+    :lastmodtime '(21413 1116 0 0)
+    )
+   (semanticdb-table "cat.hpp"
+    :file "cat.hpp"
+    :fsize 957
+    :lastmodtime '(21413 1116 0 0)
+    )
+   (semanticdb-table "repeat.hpp"
+    :file "repeat.hpp"
+    :fsize 745
+    :lastmodtime '(21413 1116 0 0)
+    )
+   (semanticdb-table "inc.hpp"
+    :file "inc.hpp"
+    :fsize 736
+    :lastmodtime '(21413 1116 0 0)
+    )
+   )
+  :file "!usr!include!boost!preprocessor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

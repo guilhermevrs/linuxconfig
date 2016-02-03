@@ -1,0 +1,206 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables (list 
+   (semanticdb-table "yes_no_type.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_TT_DETAIL_YES_NO_TYPE_HPP_INCLUDED" variable (:constant-flag t) nil [478 518])
+            ("boost" type
+               (:members 
+                  ( ("type_traits" type
+                       (:members 
+                          ( ("yes_type" type
+                               (:typedef ("char")
+                                :superclasses "char"
+                                :type "typedef")
+                                (reparse-symbol namespacesubparts) [563 585])
+                            ("no_type" type
+                               (:members 
+                                  ( ("padding" variable
+                                       (:dereference 1
+                                        :type "char")
+                                        (reparse-symbol classsubparts) [606 622]))                                  
+                                :type "struct")
+                                (reparse-symbol namespacesubparts) [586 625]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [538 628]))                  
+                :type "namespace")
+                nil [520 655]))          
+    :file "yes_no_type.hpp"
+    :pointmax 727
+    :fsize 726
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_TT_DETAIL_YES_NO_TYPE_HPP_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "bool_trait_def.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/type_traits/detail/template_arity_spec.hpp" include (:system-flag t) nil [365 424])
+            ("boost/type_traits/integral_constant.hpp" include (:system-flag t) nil [425 475])
+            ("boost/mpl/bool.hpp" include (:system-flag t) nil [476 505])
+            ("boost/mpl/aux_/lambda_support.hpp" include (:system-flag t) nil [506 550])
+            ("boost/config.hpp" include (:system-flag t) nil [551 578])
+            ("BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL" variable (:constant-flag t) nil [1894 1928])
+            ("BOOST_TT_AUX_BOOL_C_BASE" variable (:constant-flag t) nil [1989 2013])
+            ("BOOST_TT_AUX_BOOL_TRAIT_DEF1" variable (:constant-flag t) nil [2079 2107])
+            ("BOOST_TT_AUX_BOOL_TRAIT_DEF2" variable (:constant-flag t) nil [2364 2392])
+            ("BOOST_TT_AUX_BOOL_TRAIT_DEF3" variable (:constant-flag t) nil [2670 2698])
+            ("BOOST_TT_AUX_BOOL_TRAIT_SPEC1" variable (:constant-flag t) nil [2995 3024])
+            ("BOOST_TT_AUX_BOOL_TRAIT_SPEC2" variable (:constant-flag t) nil [3235 3264])
+            ("BOOST_TT_AUX_BOOL_TRAIT_IMPL_SPEC1" variable (:constant-flag t) nil [3490 3524])
+            ("BOOST_TT_AUX_BOOL_TRAIT_IMPL_SPEC2" variable (:constant-flag t) nil [3658 3692])
+            ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC1_1" variable (:constant-flag t) nil [3836 3875])
+            ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC1_2" variable (:constant-flag t) nil [4045 4084])
+            ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC2_1" variable (:constant-flag t) nil [4271 4310])
+            ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC2_2" variable (:constant-flag t) nil [4549 4588])
+            ("BOOST_TT_AUX_BOOL_TRAIT_IMPL_PARTIAL_SPEC2_1" variable (:constant-flag t) nil [4785 4829])
+            ("BOOST_TT_AUX_BOOL_TRAIT_CV_SPEC1" variable (:constant-flag t) nil [5025 5057]))          
+    :file "bool_trait_def.hpp"
+    :pointmax 5459
+    :fsize 5458
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("BOOST_TT_AUX_BOOL_TRAIT_IMPL_SPEC1" (spp-arg-list ("trait" "sp" "C") 3524 . 3536) . 
+              ((TEMPLATE "template" 3539 . 3547) (punctuation "<" 3547 . 3548) (punctuation ">" 3548 . 3549) (STRUCT "struct" 3550 . 3556) (spp-symbol-merge ((symbol "trait" 3557 . 3562) (symbol "_impl" 3564 . 3569)) 3557 . 3569) (punctuation "<" 3569 . 3570) (symbol "sp" 3571 . 3573) (punctuation ">" 3574 . 3575) (semantic-list "{ \\
+public:\\
+    BOOST_STATIC_CONSTANT(bool, value = (C)); \\
+}" 3578 . 3640) (punctuation ";" 3640 . 3641)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_DEF1" (spp-arg-list ("trait" "T" "C") 2107 . 2118) . 
+              ((TEMPLATE "template" 2121 . 2129) (punctuation "<" 2129 . 2130) (TYPENAME "typename" 2131 . 2139) (symbol "T" 2140 . 2141) (punctuation ">" 2142 . 2143) (STRUCT "struct" 2144 . 2150) (symbol "trait" 2151 . 2156) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 2163 . 2187) (semantic-list "(C)" 2187 . 2190) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT(1,trait,(T)) \\
+}" 2193 . 2299) (punctuation ";" 2299 . 2300) (symbol "BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" 2305 . 2337) (semantic-list "(1,trait)" 2337 . 2346)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_IMPL_SPEC2" (spp-arg-list ("trait" "sp1" "sp2" "C") 3692 . 3709) . 
+              ((TEMPLATE "template" 3712 . 3720) (punctuation "<" 3720 . 3721) (punctuation ">" 3721 . 3722) (STRUCT "struct" 3723 . 3729) (spp-symbol-merge ((symbol "trait" 3730 . 3735) (symbol "_impl" 3737 . 3742)) 3730 . 3742) (punctuation "<" 3742 . 3743) (symbol "sp1" 3744 . 3747) (punctuation "," 3747 . 3748) (symbol "sp2" 3748 . 3751) (punctuation ">" 3752 . 3753) (semantic-list "{ \\
+public:\\
+    BOOST_STATIC_CONSTANT(bool, value = (C)); \\
+}" 3756 . 3818) (punctuation ";" 3818 . 3819)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC2_1" (spp-arg-list ("param" "trait" "sp1" "sp2" "C") 4310 . 4333) . 
+              ((TEMPLATE "template" 4336 . 4344) (punctuation "<" 4344 . 4345) (symbol "param" 4346 . 4351) (punctuation ">" 4352 . 4353) (STRUCT "struct" 4354 . 4360) (symbol "trait" 4361 . 4366) (punctuation "<" 4366 . 4367) (symbol "sp1" 4368 . 4371) (punctuation "," 4371 . 4372) (symbol "sp2" 4372 . 4375) (punctuation ">" 4376 . 4377) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 4384 . 4408) (semantic-list "(C)" 4408 . 4411) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC(2,trait,(sp1,sp2)) \\
+}" 4414 . 4531) (punctuation ";" 4531 . 4532)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_DEF2" (spp-arg-list ("trait" "T1" "T2" "C") 2392 . 2407) . 
+              ((TEMPLATE "template" 2410 . 2418) (punctuation "<" 2418 . 2419) (TYPENAME "typename" 2420 . 2428) (symbol "T1" 2429 . 2431) (punctuation "," 2431 . 2432) (TYPENAME "typename" 2433 . 2441) (symbol "T2" 2442 . 2444) (punctuation ">" 2445 . 2446) (STRUCT "struct" 2447 . 2453) (symbol "trait" 2454 . 2459) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 2466 . 2490) (semantic-list "(C)" 2490 . 2493) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT(2,trait,(T1,T2)) \\
+}" 2496 . 2606) (punctuation ";" 2606 . 2607) (symbol "BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" 2612 . 2644) (semantic-list "(2,trait)" 2644 . 2653)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC2_2" (spp-arg-list ("param1" "param2" "trait" "sp1" "sp2" "C") 4588 . 4619) . 
+              ((TEMPLATE "template" 4622 . 4630) (punctuation "<" 4630 . 4631) (symbol "param1" 4632 . 4638) (punctuation "," 4638 . 4639) (symbol "param2" 4640 . 4646) (punctuation ">" 4647 . 4648) (STRUCT "struct" 4649 . 4655) (symbol "trait" 4656 . 4661) (punctuation "<" 4661 . 4662) (symbol "sp1" 4663 . 4666) (punctuation "," 4666 . 4667) (symbol "sp2" 4667 . 4670) (punctuation ">" 4671 . 4672) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 4679 . 4703) (semantic-list "(C)" 4703 . 4706) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+}" 4709 . 4767) (punctuation ";" 4767 . 4768)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_IMPL_PARTIAL_SPEC2_1" (spp-arg-list ("param" "trait" "sp1" "sp2" "C") 4829 . 4852) . 
+              ((TEMPLATE "template" 4855 . 4863) (punctuation "<" 4863 . 4864) (symbol "param" 4865 . 4870) (punctuation ">" 4871 . 4872) (STRUCT "struct" 4873 . 4879) (spp-symbol-merge ((symbol "trait" 4880 . 4885) (symbol "_impl" 4887 . 4892)) 4880 . 4892) (punctuation "<" 4892 . 4893) (symbol "sp1" 4894 . 4897) (punctuation "," 4897 . 4898) (symbol "sp2" 4898 . 4901) (punctuation ">" 4902 . 4903) (semantic-list "{ \\
+public:\\
+    BOOST_STATIC_CONSTANT(bool, value = (C)); \\
+}" 4906 . 4968) (punctuation ";" 4968 . 4969)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_DEF3" (spp-arg-list ("trait" "T1" "T2" "T3" "C") 2698 . 2716) . 
+              ((TEMPLATE "template" 2719 . 2727) (punctuation "<" 2727 . 2728) (TYPENAME "typename" 2729 . 2737) (symbol "T1" 2738 . 2740) (punctuation "," 2740 . 2741) (TYPENAME "typename" 2742 . 2750) (symbol "T2" 2751 . 2753) (punctuation "," 2753 . 2754) (TYPENAME "typename" 2755 . 2763) (symbol "T3" 2764 . 2766) (punctuation ">" 2767 . 2768) (STRUCT "struct" 2769 . 2775) (symbol "trait" 2776 . 2781) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 2788 . 2812) (semantic-list "(C)" 2812 . 2815) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT(3,trait,(T1,T2,T3)) \\
+}" 2818 . 2931) (punctuation ";" 2931 . 2932) (symbol "BOOST_TT_AUX_TEMPLATE_ARITY_SPEC" 2937 . 2969) (semantic-list "(3,trait)" 2969 . 2978)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL" (spp-arg-list ("C") 1928 . 1931))
+          ("BOOST_TT_AUX_BOOL_C_BASE" (spp-arg-list ("C") 2013 . 2016) . 
+              ((punctuation ":" 2017 . 2018) (PUBLIC "public" 2019 . 2025) (punctuation ":" 2026 . 2027) (punctuation ":" 2027 . 2028) (symbol "boost" 2028 . 2033) (punctuation ":" 2033 . 2034) (punctuation ":" 2034 . 2035) (symbol "integral_constant" 2035 . 2052) (punctuation "<" 2052 . 2053) (BOOL "bool" 2053 . 2057) (punctuation "," 2057 . 2058) (symbol "C" 2058 . 2059) (punctuation ">" 2059 . 2060)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC1_1" (spp-arg-list ("param" "trait" "sp" "C") 3875 . 3893) . 
+              ((TEMPLATE "template" 3896 . 3904) (punctuation "<" 3904 . 3905) (symbol "param" 3906 . 3911) (punctuation ">" 3912 . 3913) (STRUCT "struct" 3914 . 3920) (symbol "trait" 3921 . 3926) (punctuation "<" 3926 . 3927) (symbol "sp" 3928 . 3930) (punctuation ">" 3931 . 3932) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 3939 . 3963) (semantic-list "(C)" 3963 . 3966) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+}" 3969 . 4027) (punctuation ";" 4027 . 4028)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_SPEC1" (spp-arg-list ("trait" "sp" "C") 3024 . 3036) . 
+              ((TEMPLATE "template" 3039 . 3047) (punctuation "<" 3047 . 3048) (punctuation ">" 3048 . 3049) (STRUCT "struct" 3050 . 3056) (symbol "trait" 3057 . 3062) (punctuation "<" 3062 . 3063) (symbol "sp" 3064 . 3066) (punctuation ">" 3067 . 3068) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 3075 . 3099) (semantic-list "(C)" 3099 . 3102) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC(1,trait,(sp)) \\
+}" 3105 . 3217) (punctuation ";" 3217 . 3218)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_PARTIAL_SPEC1_2" (spp-arg-list ("param1" "param2" "trait" "sp" "C") 4084 . 4110) . 
+              ((TEMPLATE "template" 4113 . 4121) (punctuation "<" 4121 . 4122) (symbol "param1" 4123 . 4129) (punctuation "," 4129 . 4130) (symbol "param2" 4131 . 4137) (punctuation ">" 4138 . 4139) (STRUCT "struct" 4140 . 4146) (symbol "trait" 4147 . 4152) (punctuation "<" 4152 . 4153) (symbol "sp" 4154 . 4156) (punctuation ">" 4157 . 4158) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 4165 . 4189) (semantic-list "(C)" 4189 . 4192) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+}" 4195 . 4253) (punctuation ";" 4253 . 4254)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_SPEC2" (spp-arg-list ("trait" "sp1" "sp2" "C") 3264 . 3281) . 
+              ((TEMPLATE "template" 3284 . 3292) (punctuation "<" 3292 . 3293) (punctuation ">" 3293 . 3294) (STRUCT "struct" 3295 . 3301) (symbol "trait" 3302 . 3307) (punctuation "<" 3307 . 3308) (symbol "sp1" 3309 . 3312) (punctuation "," 3312 . 3313) (symbol "sp2" 3313 . 3316) (punctuation ">" 3317 . 3318) (symbol "BOOST_TT_AUX_BOOL_C_BASE" 3325 . 3349) (semantic-list "(C)" 3349 . 3352) (semantic-list "{ \\
+public:\\
+    BOOST_TT_AUX_BOOL_TRAIT_VALUE_DECL(C) \\
+    BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC(2,trait,(sp1,sp2)) \\
+}" 3355 . 3472) (punctuation ";" 3472 . 3473)))
+          ("BOOST_TT_AUX_BOOL_TRAIT_CV_SPEC1" (spp-arg-list ("trait" "sp" "value") 5057 . 5073) . 
+              ((symbol "BOOST_TT_AUX_BOOL_TRAIT_SPEC1" 5080 . 5109) (semantic-list "(trait,sp,value)" 5109 . 5125) (symbol "BOOST_TT_AUX_BOOL_TRAIT_SPEC1" 5132 . 5161) (semantic-list "(trait,sp const,value)" 5161 . 5183) (symbol "BOOST_TT_AUX_BOOL_TRAIT_SPEC1" 5190 . 5219) (semantic-list "(trait,sp volatile,value)" 5219 . 5244) (symbol "BOOST_TT_AUX_BOOL_TRAIT_SPEC1" 5251 . 5280) (semantic-list "(trait,sp const volatile,value)" 5280 . 5311)))
+          )
+
+    )
+   (semanticdb-table "bool_trait_undef.hpp"
+    :major-mode 'c++-mode
+    :tags nil
+    :file "bool_trait_undef.hpp"
+    :pointmax 985
+    :fsize 984
+    :lastmodtime '(21413 1118 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ice_or.hpp"
+    :file "ice_or.hpp"
+    :fsize 999
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "ice_and.hpp"
+    :file "ice_and.hpp"
+    :fsize 996
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "ice_not.hpp"
+    :file "ice_not.hpp"
+    :fsize 777
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "ice_eq.hpp"
+    :file "ice_eq.hpp"
+    :fsize 972
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "type_trait_def.hpp"
+    :file "type_trait_def.hpp"
+    :fsize 1578
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "type_trait_undef.hpp"
+    :file "type_trait_undef.hpp"
+    :fsize 625
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "false_result.hpp"
+    :file "false_result.hpp"
+    :fsize 767
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "is_function_ptr_helper.hpp"
+    :file "is_function_ptr_helper.hpp"
+    :fsize 19787
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "template_arity_spec.hpp"
+    :file "template_arity_spec.hpp"
+    :fsize 938
+    :lastmodtime '(21413 1118 0 0)
+    )
+   (semanticdb-table "has_binary_operator.hpp"
+    :file "has_binary_operator.hpp"
+    :fsize 9672
+    :lastmodtime '(21413 1118 0 0)
+    )
+   )
+  :file "!usr!include!boost!type_traits!detail!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

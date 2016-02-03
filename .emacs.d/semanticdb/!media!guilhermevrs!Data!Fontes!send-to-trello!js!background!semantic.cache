@@ -1,0 +1,18 @@
+;; Object background/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "background/"
+  :tables (list 
+   (semanticdb-table "background.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "background.js"
+    :pointmax 508
+    :fsize 507
+    :lastmodtime '(21950 34560 203782 800000)
+    :unmatched-syntax '((IF 407 . 409) (PAREN_BLOCK 410 . 448) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (IF 407 . 409) (PAREN_BLOCK 410 . 448) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (IF 407 . 409) (PAREN_BLOCK 410 . 448) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (IF 407 . 409) (PAREN_BLOCK 410 . 448) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (IF 407 . 409) (PAREN_BLOCK 410 . 449) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69) (VARIABLE 72 . 78) (PAREN_BLOCK 114 . 404) (VAR 16 . 19) (PAREN_BLOCK 47 . 69))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!send-to-trello!js!background!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

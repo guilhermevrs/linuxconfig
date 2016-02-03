@@ -1,0 +1,1346 @@
+;; Object python2.7/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python2.7/"
+  :tables (list 
+   (semanticdb-table "random.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Random variable generators.
+
+    integers
+    --------
+           uniform within range
+
+    sequences
+    ---------
+           pick random element
+           pick random sample
+           generate random permutation
+
+    distributions on the real line:
+    ------------------------------
+           uniform
+           triangular
+           normal (Gaussian)
+           lognormal
+           negative exponential
+           gamma
+           beta
+           pareto
+           Weibull
+
+    distributions on the circle (angles 0 to 2pi)
+    ---------------------------------------------
+           circular uniform
+           von Mises
+
+General notes on the underlying Mersenne Twister core generator:
+
+* The period is 2**19937-1.
+* It is one of the most extensively tested generators in existence.
+* Without a direct way to compute N steps forward, the semantics of
+  jumpahead(n) are weakened to simply jump to another distant state and rely
+  on the large period to avoid overlapping sequences.
+* The random() method is implemented in C, executes in a single Python step,
+  and is, therefore, threadsafe.
+
+\"\"\"" code nil nil [1 1111])
+            ("__future__" include nil nil [1113 1144])
+            ("warnings" include nil nil [1145 1179])
+            ("types" include nil nil [1180 1264])
+            ("math" include nil nil [1265 1341])
+            ("math" include nil nil [1342 1413])
+            ("os" include nil nil [1414 1448])
+            ("binascii" include nil nil [1449 1489])
+            ("hashlib" include nil nil [1490 1516])
+            ("__all__" variable nil nil [1518 1902])
+            ("NV_MAGICCONST" code nil nil [1904 1945])
+            ("TWOPI" code nil nil [1946 1961])
+            ("LOG4" variable nil nil [1962 1978])
+            ("SG_MAGICCONST" code nil nil [1979 2010])
+            ("BPF" variable nil nil [2011 2019])
+            ("RECIP_BPF" variable nil nil [2055 2074])
+            ("_random" include nil nil [2257 2271])
+            ("Random" type
+               (:documentation "Random number generator base class used by bound module functions.
+
+    Used to instantiate instances of Random to get generators that don't
+    share state.  Especially useful for multi-threaded programs, creating
+    a different instance of Random for each thread, and using the jumpahead()
+    method to ensure that the generated sequences seen by each thread don't
+    overlap.
+
+    Class Random can also be subclassed if you want to use a different basic
+    generator of your own devising: in that case, override the following
+    methods: random(), seed(), getstate(), setstate() and jumpahead().
+    Optionally, implement a getrandbits() method so that randrange() can cover
+    arbitrarily large ranges.
+
+    "
+                :superclasses ("_random.Random")
+                :members 
+                  ( ("VERSION" variable nil (reparse-symbol indented_block_body) [3037 3048])
+                    ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Initialize an instance.
+
+        Optional argument x controls seeding, as for Random.seed().
+        \"\"\"" code nil (reparse-symbol indented_block_body) [3122 3229])
+                            ("self" code nil (reparse-symbol indented_block_body) [3239 3251])
+                            ("self" variable nil (reparse-symbol indented_block_body) [3260 3282]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3099 3103])
+                            ("x" variable nil (reparse-symbol function_parameters) [3105 3106]))                          
+                        :documentation "Initialize an instance.
+
+        Optional argument x controls seeding, as for Random.seed().
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [3086 3283])
+                    ("seed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3297 3301])
+                            ("a" variable nil (reparse-symbol function_parameters) [3303 3304]))                          
+                        :documentation "Initialize internal state from hashable object.
+
+        None or no argument seeds from current time or from an operating
+        system specific randomness source if available.
+
+        If a is not None or an int or long, hash(a) is used instead.
+        ")
+                        (reparse-symbol indented_block_body) [3288 3881])
+                    ("getstate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3899 3903]))                          
+                        :documentation "Return internal state; can be passed to setstate() later.")
+                        (reparse-symbol indented_block_body) [3886 4055])
+                    ("setstate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4073 4077])
+                            ("state" variable nil (reparse-symbol function_parameters) [4079 4084]))                          
+                        :documentation "Restore internal state from object returned by getstate().")
+                        (reparse-symbol indented_block_body) [4060 5122])
+                    ("jumpahead" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5141 5145])
+                            ("n" variable nil (reparse-symbol function_parameters) [5147 5148]))                          
+                        :documentation "Change the internal state to one that is likely far away
+        from the current state.  This method will not be in Py3.x,
+        so it is better to simply reseed.
+        ")
+                        (reparse-symbol indented_block_body) [5127 5688])
+                    ("__getstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5912 5916]))                          )
+                        (reparse-symbol indented_block_body) [5895 5963])
+                    ("__setstate__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5985 5989])
+                            ("state" variable nil (reparse-symbol function_parameters) [5991 5996]))                          )
+                        (reparse-symbol indented_block_body) [5968 6042])
+                    ("__reduce__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6062 6066]))                          )
+                        (reparse-symbol indented_block_body) [6047 6120])
+                    ("randrange" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6201 6205])
+                            ("start" variable nil (reparse-symbol function_parameters) [6207 6212])
+                            ("stop" variable nil (reparse-symbol function_parameters) [6214 6218])
+                            ("step" variable nil (reparse-symbol function_parameters) [6225 6229])
+                            ("_int" variable nil (reparse-symbol function_parameters) [6233 6237])
+                            ("_maxwidth" variable nil (reparse-symbol function_parameters) [6243 6252]))                          
+                        :documentation "Choose a random item from range(start, stop[, step]).
+
+        This fixes the problem with randint() which includes the
+        endpoint; in Python this is usually not what you want.
+
+        ")
+                        (reparse-symbol indented_block_body) [6187 8774])
+                    ("randint" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8791 8795])
+                            ("a" variable nil (reparse-symbol function_parameters) [8797 8798])
+                            ("b" variable nil (reparse-symbol function_parameters) [8800 8801]))                          
+                        :documentation "Return random integer in range [a, b], including both end points.
+        ")
+                        (reparse-symbol indented_block_body) [8779 8932])
+                    ("_randbelow" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8952 8956])
+                            ("n" variable nil (reparse-symbol function_parameters) [8958 8959])
+                            ("_log" variable nil (reparse-symbol function_parameters) [8961 8965])
+                            ("_int" variable nil (reparse-symbol function_parameters) [8972 8976])
+                            ("_maxwidth" variable nil (reparse-symbol function_parameters) [8982 8991])
+                            ("_Method" variable nil (reparse-symbol function_parameters) [9020 9027])
+                            ("_BuiltinMethod" variable nil (reparse-symbol function_parameters) [9041 9055]))                          
+                        :documentation "Return a random int in the range [0,n)
+
+        Handles the case where n has more bits than returned
+        by a single call to the underlying generator.
+        ")
+                        (reparse-symbol indented_block_body) [8937 10094])
+                    ("choice" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10173 10177])
+                            ("seq" variable nil (reparse-symbol function_parameters) [10179 10182]))                          
+                        :documentation "Choose a random element from a non-empty sequence.")
+                        (reparse-symbol indented_block_body) [10162 10337])
+                    ("shuffle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10354 10358])
+                            ("x" variable nil (reparse-symbol function_parameters) [10360 10361])
+                            ("random" variable nil (reparse-symbol function_parameters) [10363 10369]))                          
+                        :documentation "x, random=random.random -> shuffle list x in place; return None.
+
+        Optional arg random is a 0-argument function returning a random
+        float in [0.0, 1.0); by default, the standard random.random.
+
+        ")
+                        (reparse-symbol indented_block_body) [10342 10878])
+                    ("sample" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10894 10898])
+                            ("population" variable nil (reparse-symbol function_parameters) [10900 10910])
+                            ("k" variable nil (reparse-symbol function_parameters) [10912 10913]))                          
+                        :documentation "Chooses k unique random elements from a population sequence.
+
+        Returns a new list containing elements from the population while
+        leaving the original population unchanged.  The resulting list is
+        in selection order so that all sub-slices will also be valid random
+        samples.  This allows raffle winners (the sample) to be partitioned
+        into grand prize and second place winners (the subslices).
+
+        Members of the population need not be hashable or unique.  If the
+        population contains repeats, then each occurrence is a possible
+        selection in the sample.
+
+        To choose a sample in a range of integers, use xrange as an argument.
+        This is especially fast and space efficient for sampling from a
+        large population:   sample(xrange(10000000), 60)
+        ")
+                        (reparse-symbol indented_block_body) [10883 13713])
+                    ("uniform" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13868 13872])
+                            ("a" variable nil (reparse-symbol function_parameters) [13874 13875])
+                            ("b" variable nil (reparse-symbol function_parameters) [13877 13878]))                          )
+                        (reparse-symbol indented_block_body) [13856 14005])
+                    ("triangular" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14082 14086])
+                            ("low" variable nil (reparse-symbol function_parameters) [14088 14091])
+                            ("high" variable nil (reparse-symbol function_parameters) [14097 14101])
+                            ("mode" variable nil (reparse-symbol function_parameters) [14107 14111]))                          
+                        :documentation "Triangular distribution.
+
+        Continuous distribution bounded by given lower and upper limits,
+        and having a given mode value in-between.
+
+        http://en.wikipedia.org/wiki/Triangular_distribution
+
+        ")
+                        (reparse-symbol indented_block_body) [14067 14596])
+                    ("normalvariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14685 14689])
+                            ("mu" variable nil (reparse-symbol function_parameters) [14691 14693])
+                            ("sigma" variable nil (reparse-symbol function_parameters) [14695 14700]))                          
+                        :documentation "Normal distribution.
+
+        mu is the mean, and sigma is the standard deviation.
+
+        ")
+                        (reparse-symbol indented_block_body) [14667 15360])
+                    ("lognormvariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15453 15457])
+                            ("mu" variable nil (reparse-symbol function_parameters) [15459 15461])
+                            ("sigma" variable nil (reparse-symbol function_parameters) [15463 15468]))                          
+                        :documentation "Log normal distribution.
+
+        If you take the natural logarithm of this distribution, you'll get a
+        normal distribution with mean mu and standard deviation sigma.
+        mu can have any value, and sigma must be greater than zero.
+
+        ")
+                        (reparse-symbol indented_block_body) [15434 15788])
+                    ("expovariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15880 15884])
+                            ("lambd" variable nil (reparse-symbol function_parameters) [15886 15891]))                          
+                        :documentation "Exponential distribution.
+
+        lambd is 1.0 divided by the desired mean.  It should be
+        nonzero.  (The parameter would be called \"lambda\", but that is
+        a reserved word in Python.)  Returned values range from 0 to
+        positive infinity if lambd is positive, and from negative
+        infinity to 0 if lambd is negative.
+
+        ")
+                        (reparse-symbol indented_block_body) [15864 16505])
+                    ("vonmisesvariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16599 16603])
+                            ("mu" variable nil (reparse-symbol function_parameters) [16605 16607])
+                            ("kappa" variable nil (reparse-symbol function_parameters) [16609 16614]))                          
+                        :documentation "Circular data distribution.
+
+        mu is the mean angle, expressed in radians between 0 and 2*pi, and
+        kappa is the concentration parameter, which must be greater than or
+        equal to zero.  If kappa is equal to zero, this distribution reduces
+        to a uniform random angle over the range 0 to 2*pi.
+
+        ")
+                        (reparse-symbol indented_block_body) [16579 17969])
+                    ("gammavariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18056 18060])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [18062 18067])
+                            ("beta" variable nil (reparse-symbol function_parameters) [18069 18073]))                          
+                        :documentation "Gamma distribution.  Not the gamma function!
+
+        Conditions on the parameters are alpha > 0 and beta > 0.
+
+        The probability distribution function is:
+
+                    x ** (alpha - 1) * math.exp(-x / beta)
+          pdf(x) =  --------------------------------------
+                      math.gamma(alpha) * beta ** alpha
+
+        ")
+                        (reparse-symbol indented_block_body) [18039 20263])
+                    ("gauss" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20351 20355])
+                            ("mu" variable nil (reparse-symbol function_parameters) [20357 20359])
+                            ("sigma" variable nil (reparse-symbol function_parameters) [20361 20366]))                          
+                        :documentation "Gaussian distribution.
+
+        mu is the mean, and sigma is the standard deviation.  This is
+        slightly faster than the normalvariate() function.
+
+        Not thread-safe without a lock around calls.
+
+        ")
+                        (reparse-symbol indented_block_body) [20341 21677])
+                    ("betavariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22173 22177])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [22179 22184])
+                            ("beta" variable nil (reparse-symbol function_parameters) [22186 22190]))                          
+                        :documentation "Beta distribution.
+
+        Conditions on the parameters are alpha > 0 and beta > 0.
+        Returned values range between 0 and 1.
+
+        ")
+                        (reparse-symbol indented_block_body) [22157 22648])
+                    ("paretovariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22724 22728])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [22730 22735]))                          
+                        :documentation "Pareto distribution.  alpha is the shape parameter.")
+                        (reparse-symbol indented_block_body) [22706 22900])
+                    ("weibullvariate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22978 22982])
+                            ("alpha" variable nil (reparse-symbol function_parameters) [22984 22989])
+                            ("beta" variable nil (reparse-symbol function_parameters) [22991 22995]))                          
+                        :documentation "Weibull distribution.
+
+        alpha is the scale parameter and beta is the shape parameter.
+
+        ")
+                        (reparse-symbol indented_block_body) [22959 23247]))                  
+                :type "class")
+                nil [2273 23247])
+            ("WichmannHill" type
+               (:superclasses ("Random")
+                :members 
+                  ( ("VERSION" variable nil (reparse-symbol indented_block_body) [23340 23351])
+                    ("seed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23398 23402])
+                            ("a" variable nil (reparse-symbol function_parameters) [23404 23405]))                          
+                        :documentation "Initialize internal state from hashable object.
+
+        None or no argument seeds from current time or from an operating
+        system specific randomness source if available.
+
+        If a is not None or an int or long, hash(a) is used instead.
+
+        If a is an int or long, a is used directly.  Distinct values between
+        0 and 27814431486575L inclusive are guaranteed to yield distinct
+        internal states (this guarantee is specific to the default
+        Wichmann-Hill generator).
+        ")
+                        (reparse-symbol indented_block_body) [23389 24413])
+                    ("random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24429 24433]))                          
+                        :documentation "Get the next random number in the range [0.0, 1.0).")
+                        (reparse-symbol indented_block_body) [24418 25485])
+                    ("getstate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25503 25507]))                          
+                        :documentation "Return internal state; can be passed to setstate() later.")
+                        (reparse-symbol indented_block_body) [25490 25639])
+                    ("setstate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25657 25661])
+                            ("state" variable nil (reparse-symbol function_parameters) [25663 25668]))                          
+                        :documentation "Restore internal state from object returned by getstate().")
+                        (reparse-symbol indented_block_body) [25644 26050])
+                    ("jumpahead" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26069 26073])
+                            ("n" variable nil (reparse-symbol function_parameters) [26075 26076]))                          
+                        :documentation "Act as if n calls to random() were made, but quickly.
+
+        n is an int, greater than or equal to 0.
+
+        Example use:  If you have 2 threads and know that each will
+        consume no more than a million random numbers, create two Random
+        objects r1 and r2, then do
+            r2.setstate(r1.getstate())
+            r2.jumpahead(1000000)
+        Then r1 and r2 will use guaranteed-disjoint segments of the full
+        period.
+        ")
+                        (reparse-symbol indented_block_body) [26055 26818])
+                    ("__whseed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26836 26840])
+                            ("x" variable nil (reparse-symbol function_parameters) [26842 26843])
+                            ("y" variable nil (reparse-symbol function_parameters) [26847 26848])
+                            ("z" variable nil (reparse-symbol function_parameters) [26852 26853]))                          
+                        :documentation "Set the Wichmann-Hill seed from (x, y, z).
+
+        These must be integers in the range [0, 256).
+        ")
+                        (reparse-symbol indented_block_body) [26823 27622])
+                    ("whseed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27638 27642])
+                            ("a" variable nil (reparse-symbol function_parameters) [27644 27645]))                          
+                        :documentation "Seed from hashable object's hash code.
+
+        None or no argument seeds from current time.  It is not guaranteed
+        that objects with distinct hash codes lead to distinct internal
+        states.
+
+        This is obsolete, provided for compatibility with the seed routine
+        used prior to Python 2.1.  Use the .seed() method instead.
+        ")
+                        (reparse-symbol indented_block_body) [27627 28326]))                  
+                :type "class")
+                nil [23307 28326])
+            ("SystemRandom" type
+               (:documentation "Alternate random number generator using sources provided
+    by the operating system (such as /dev/urandom on Unix or
+    CryptGenRandom on Windows).
+
+     Not available on all systems (see os.urandom() for details).
+    "
+                :superclasses ("Random")
+                :members 
+                  ( ("random" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28674 28678]))                          
+                        :documentation "Get the next random number in the range [0.0, 1.0).")
+                        (reparse-symbol indented_block_body) [28663 28813])
+                    ("getrandbits" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28834 28838])
+                            ("k" variable nil (reparse-symbol function_parameters) [28840 28841]))                          
+                        :documentation "getrandbits(k) -> x.  Generates a long int with k random bits.")
+                        (reparse-symbol indented_block_body) [28818 29293])
+                    ("_stub" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29308 29312])
+                            ("args" variable nil (reparse-symbol function_parameters) [29314 29319])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [29321 29327]))                          )
+                        (reparse-symbol indented_block_body) [29298 29421])
+                    ("seed" variable nil (reparse-symbol indented_block_body) [29425 29449])
+                    ("_notimplemented" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29475 29479])
+                            ("args" variable nil (reparse-symbol function_parameters) [29481 29486])
+                            ("kwds" variable nil (reparse-symbol function_parameters) [29488 29494]))                          )
+                        (reparse-symbol indented_block_body) [29455 29653])
+                    ("getstate" variable nil (reparse-symbol indented_block_body) [29657 29694]))                  
+                :type "class")
+                nil [28398 29695])
+            ("_test_generator" function (:arguments 
+              ( ("n" variable nil (reparse-symbol function_parameters) [29775 29776])
+                ("func" variable nil (reparse-symbol function_parameters) [29778 29782])
+                ("args" variable nil (reparse-symbol function_parameters) [29784 29788]))              ) nil [29755 30309])
+            ("_test" function (:arguments 
+              ( ("N" variable nil (reparse-symbol function_parameters) [30321 30322]))              ) nil [30311 31109])
+            ("_inst" variable nil nil [31441 31457])
+            ("seed" variable nil nil [31458 31475])
+            ("random" variable nil nil [31476 31497])
+            ("uniform" variable nil nil [31498 31521])
+            ("triangular" variable nil nil [31522 31551])
+            ("randint" variable nil nil [31552 31575])
+            ("choice" variable nil nil [31576 31597])
+            ("randrange" variable nil nil [31598 31625])
+            ("sample" variable nil nil [31626 31647])
+            ("shuffle" variable nil nil [31648 31671])
+            ("normalvariate" variable nil nil [31672 31707])
+            ("lognormvariate" variable nil nil [31708 31745])
+            ("expovariate" variable nil nil [31746 31777])
+            ("vonmisesvariate" variable nil nil [31778 31817])
+            ("gammavariate" variable nil nil [31818 31851])
+            ("gauss" variable nil nil [31852 31871])
+            ("betavariate" variable nil nil [31872 31903])
+            ("paretovariate" variable nil nil [31904 31939])
+            ("weibullvariate" variable nil nil [31940 31977])
+            ("getstate" variable nil nil [31978 32003])
+            ("setstate" variable nil nil [32004 32029])
+            ("jumpahead" variable nil nil [32030 32057])
+            ("getrandbits" variable nil nil [32058 32089])
+            ("if" code nil nil [32091 32130]))          
+    :file "random.py"
+    :pointmax 32130
+    :fsize 32129
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax '((NAME 14388 . 14389) (IF 14396 . 14398) (ELSE 14412 . 14416))
+    )
+   (semanticdb-table "__future__.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Record of phased-in incompatible language changes.
+
+Each line is of the form:
+
+    FeatureName = \"_Feature(\" OptionalRelease \",\" MandatoryRelease \",\"
+                              CompilerFlag \")\"
+
+where, normally, OptionalRelease < MandatoryRelease, and both are 5-tuples
+of the same form as sys.version_info:
+
+    (PY_MAJOR_VERSION, # the 2 in 2.1.0a3; an int
+     PY_MINOR_VERSION, # the 1; an int
+     PY_MICRO_VERSION, # the 0; an int
+     PY_RELEASE_LEVEL, # \"alpha\", \"beta\", \"candidate\" or \"final\"; string
+     PY_RELEASE_SERIAL # the 3; an int
+    )
+
+OptionalRelease records the first release in which
+
+    from __future__ import FeatureName
+
+was accepted.
+
+In the case of MandatoryReleases that have not yet occurred,
+MandatoryRelease predicts the release in which the feature will become part
+of the language.
+
+Else MandatoryRelease records when the feature became part of the language;
+in releases at or after that, modules no longer need
+
+    from __future__ import FeatureName
+
+to use the feature in question, but may continue to use such imports.
+
+MandatoryRelease may also be None, meaning that a planned feature got
+dropped.
+
+Instances of class _Feature have two corresponding methods,
+.getOptionalRelease() and .getMandatoryRelease().
+
+CompilerFlag is the (bitfield) flag that should be passed in the fourth
+argument to the builtin function compile() to enable the feature in
+dynamically compiled code.  This flag is stored in the .compiler_flag
+attribute on _Future instances.  These values must match the appropriate
+#defines of CO_xxx flags in Include/compile.h.
+
+No feature line is ever to be deleted from this file.
+\"\"\"" code nil nil [1 1645])
+            ("all_feature_names" variable nil nil [1647 1816])
+            ("__all__" code nil nil [1818 1869])
+            ("CO_NESTED" variable nil nil [2093 2122])
+            ("CO_GENERATOR_ALLOWED" variable nil nil [2141 2165])
+            ("CO_FUTURE_DIVISION" variable nil nil [2209 2238])
+            ("CO_FUTURE_ABSOLUTE_IMPORT" variable nil nil [2252 2286])
+            ("CO_FUTURE_WITH_STATEMENT" variable nil nil [2325 2359])
+            ("CO_FUTURE_PRINT_FUNCTION" variable nil nil [2379 2414])
+            ("CO_FUTURE_UNICODE_LITERALS" variable nil nil [2434 2470])
+            ("_Feature" type
+               (:members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [2596 2627])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2636 2669])
+                            ("self" variable nil (reparse-symbol indented_block_body) [2678 2712]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2531 2535])
+                            ("optionalRelease" variable nil (reparse-symbol function_parameters) [2537 2552])
+                            ("mandatoryRelease" variable nil (reparse-symbol function_parameters) [2554 2570])
+                            ("compiler_flag" variable nil (reparse-symbol function_parameters) [2572 2585]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [2518 2713])
+                    ("getOptionalRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2741 2745]))                          
+                        :documentation "Return first release in which this feature was recognized.
+
+        This is a 5-tuple, of the same form as sys.version_info.
+        ")
+                        (reparse-symbol indented_block_body) [2718 2926])
+                    ("getMandatoryRelease" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2955 2959]))                          
+                        :documentation "Return release in which this feature will become mandatory.
+
+        This is a 5-tuple, of the same form as sys.version_info, or, if
+        the feature was dropped, is None.
+        ")
+                        (reparse-symbol indented_block_body) [2931 3191])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3209 3213]))                          )
+                        (reparse-symbol indented_block_body) [3196 3370]))                  
+                :type "class")
+                nil [2498 3370])
+            ("nested_scopes" variable nil nil [3371 3502])
+            ("generators" variable nil nil [3504 3637])
+            ("division" variable nil nil [3639 3764])
+            ("absolute_import" variable nil nil [3766 3919])
+            ("with_statement" variable nil nil [3921 4070])
+            ("print_function" variable nil nil [4072 4221])
+            ("unicode_literals" variable nil nil [4223 4380]))          
+    :file "__future__.py"
+    :pointmax 4381
+    :fsize 4380
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "warnings.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Python part of the warnings subsystem.\"\"\"" code nil nil [1 45])
+            ("linecache" include nil nil [172 188])
+            ("sys" include nil nil [189 199])
+            ("types" include nil nil [200 212])
+            ("__all__" variable nil nil [214 328])
+            ("warnpy3k" function
+               (:documentation "Issue a deprecation warning for Python 3.x related changes.
+
+    Warnings are omitted unless Python is started with the -3 option.
+    "
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [344 351])
+                    ("category" variable nil (reparse-symbol function_parameters) [353 361])
+                    ("stacklevel" variable nil (reparse-symbol function_parameters) [368 378]))                  )
+                nil [331 670])
+            ("_show_warning" function
+               (:documentation "Hook to write a warning to a file; replace if you like."
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [689 696])
+                    ("category" variable nil (reparse-symbol function_parameters) [698 706])
+                    ("filename" variable nil (reparse-symbol function_parameters) [708 716])
+                    ("lineno" variable nil (reparse-symbol function_parameters) [718 724])
+                    ("file" variable nil (reparse-symbol function_parameters) [726 730])
+                    ("line" variable nil (reparse-symbol function_parameters) [737 741]))                  )
+                nil [671 1047])
+            ("showwarning" variable nil nil [1134 1161])
+            ("formatwarning" function
+               (:documentation "Function to format a warning the standard way."
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [1181 1188])
+                    ("category" variable nil (reparse-symbol function_parameters) [1190 1198])
+                    ("filename" variable nil (reparse-symbol function_parameters) [1200 1208])
+                    ("lineno" variable nil (reparse-symbol function_parameters) [1210 1216])
+                    ("line" variable nil (reparse-symbol function_parameters) [1218 1222]))                  )
+                nil [1163 1519])
+            ("filterwarnings" function
+               (:documentation "Insert an entry into the list of warnings filters (at the front).
+
+    'action' -- one of \"error\", \"ignore\", \"always\", \"default\", \"module\",
+                or \"once\"
+    'message' -- a regex that the warning message must match
+    'category' -- a class that the warning must be a subclass of
+    'module' -- a regex that the module name must match
+    'lineno' -- an integer line number, 0 matches all warnings
+    'append' -- if true, append to the list of filters
+    "
+                :arguments 
+                  ( ("action" variable nil (reparse-symbol function_parameters) [1539 1545])
+                    ("message" variable nil (reparse-symbol function_parameters) [1547 1554])
+                    ("category" variable nil (reparse-symbol function_parameters) [1559 1567])
+                    ("module" variable nil (reparse-symbol function_parameters) [1577 1583])
+                    ("lineno" variable nil (reparse-symbol function_parameters) [1588 1594])
+                    ("append" variable nil (reparse-symbol function_parameters) [1617 1623]))                  )
+                nil [1520 2854])
+            ("simplefilter" function
+               (:documentation "Insert a simple entry into the list of warnings filters (at the front).
+
+    A simple filter matches all modules and messages.
+    'action' -- one of \"error\", \"ignore\", \"always\", \"default\", \"module\",
+                or \"once\"
+    'category' -- a class that the warning must be a subclass of
+    'lineno' -- an integer line number, 0 matches all warnings
+    'append' -- if true, append to the list of filters
+    "
+                :arguments 
+                  ( ("action" variable nil (reparse-symbol function_parameters) [2872 2878])
+                    ("category" variable nil (reparse-symbol function_parameters) [2880 2888])
+                    ("lineno" variable nil (reparse-symbol function_parameters) [2898 2904])
+                    ("append" variable nil (reparse-symbol function_parameters) [2908 2914]))                  )
+                nil [2855 3709])
+            ("resetwarnings" function (:documentation "Clear the list of warning filters, so that no filters are active.") nil [3710 3827])
+            ("_OptionError" type
+               (:documentation "Exception used by option processing helpers."
+                :superclasses ("Exception")
+                :members 
+                  ( ("pass" code nil (reparse-symbol indented_block_body) [3918 3922]))                  
+                :type "class")
+                nil [3828 3923])
+            ("_processoptions" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4002 4006]))              ) nil [3982 4171])
+            ("_setoption" function (:arguments 
+              ( ("arg" variable nil (reparse-symbol function_parameters) [4218 4221]))              ) nil [4203 5029])
+            ("_getaction" function (:arguments 
+              ( ("action" variable nil (reparse-symbol function_parameters) [5071 5077]))              ) nil [5056 5356])
+            ("_getcategory" function (:arguments 
+              ( ("category" variable nil (reparse-symbol function_parameters) [5400 5408]))              ) nil [5383 6216])
+            ("warn" function
+               (:documentation "Issue a warning, or maybe ignore it or raise an exception."
+                :arguments 
+                  ( ("message" variable nil (reparse-symbol function_parameters) [6266 6273])
+                    ("category" variable nil (reparse-symbol function_parameters) [6275 6283])
+                    ("stacklevel" variable nil (reparse-symbol function_parameters) [6290 6300]))                  )
+                nil [6257 7596])
+            ("warn_explicit" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [7615 7622])
+                ("category" variable nil (reparse-symbol function_parameters) [7624 7632])
+                ("filename" variable nil (reparse-symbol function_parameters) [7634 7642])
+                ("lineno" variable nil (reparse-symbol function_parameters) [7644 7650])
+                ("module" variable nil (reparse-symbol function_parameters) [7670 7676])
+                ("registry" variable nil (reparse-symbol function_parameters) [7683 7691])
+                ("module_globals" variable nil (reparse-symbol function_parameters) [7698 7712]))              ) nil [7597 9607])
+            ("WarningMessage" type
+               (:documentation "Holds the result of a single showwarning() call."
+                :superclasses ("object")
+                :members 
+                  ( ("_WARNING_DETAILS" variable nil (reparse-symbol indented_block_body) [9704 9808])
+                    ("__init__" function
+                       (:suite 
+                          ( ("local_values" variable nil (reparse-symbol indented_block_body) [9921 9944])
+                            ("for" code nil (reparse-symbol indented_block_body) [9953 10040])
+                            ("None" code nil (reparse-symbol indented_block_body) [10105 10109]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9827 9831])
+                            ("message" variable nil (reparse-symbol function_parameters) [9833 9840])
+                            ("category" variable nil (reparse-symbol function_parameters) [9842 9850])
+                            ("filename" variable nil (reparse-symbol function_parameters) [9852 9860])
+                            ("lineno" variable nil (reparse-symbol function_parameters) [9862 9868])
+                            ("file" variable nil (reparse-symbol function_parameters) [9870 9874])
+                            ("line" variable nil (reparse-symbol function_parameters) [9901 9905]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [9814 10110])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10127 10131]))                          )
+                        (reparse-symbol indented_block_body) [10115 10358]))                  
+                :type "class")
+                nil [9609 10358])
+            ("catch_warnings" type
+               (:documentation "A context manager that copies and restores the warnings filter upon
+    exiting the context.
+
+    The 'record' argument specifies whether warnings should be captured by a
+    custom implementation of warnings.showwarning() and be appended to a list
+    returned by the context manager. Otherwise None is returned by the context
+    manager. The objects appended to the list are arguments whose attributes
+    mirror the arguments to showwarning().
+
+    The 'module' argument is to specify an alternative module to the module
+    named 'warnings' and imported under that name. This argument is only useful
+    when testing the warnings module itself.
+
+    "
+                :superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("\"\"\"Specify whether to record warnings and if an alternative module
+        should be used other than sys.modules['warnings'].
+
+        For compatibility with Python 3.0, please consider all arguments to be
+        keyword-only.
+
+        \"\"\"" code nil (reparse-symbol indented_block_body) [11117 11357])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11366 11387])
+                            ("module" code nil (reparse-symbol indented_block_body) [11458 11464])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11473 11494]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11075 11079])
+                            ("record" variable nil (reparse-symbol function_parameters) [11081 11087])
+                            ("module" variable nil (reparse-symbol function_parameters) [11095 11101]))                          
+                        :documentation "Specify whether to record warnings and if an alternative module
+        should be used other than sys.modules['warnings'].
+
+        For compatibility with Python 3.0, please consider all arguments to be
+        keyword-only.
+
+        "
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [11062 11495])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11513 11517]))                          )
+                        (reparse-symbol indented_block_body) [11500 11795])
+                    ("__enter__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11814 11818]))                          )
+                        (reparse-symbol indented_block_body) [11800 12349])
+                    ("__exit__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12367 12371])
+                            ("exc_info" variable nil (reparse-symbol function_parameters) [12373 12382]))                          )
+                        (reparse-symbol indented_block_body) [12354 12592]))                  
+                :type "class")
+                nil [10360 12592])
+            ("_warnings_defaults" variable nil nil [13044 13070])
+            ("try" code nil nil [13071 13379])
+            ("_processoptions" code nil nil [13405 13437])
+            ("if" code nil nil [13438 14022])
+            ("del" code nil nil [14022 14044]))          
+    :file "warnings.py"
+    :pointmax 14045
+    :fsize 14044
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax '((NAME 11396 . 11400) (IF 11435 . 11437) (ELSE 11453 . 11457) (NAME 10048 . 10052) (IF 10088 . 10090) (ELSE 10100 . 10104) (NAME 1367 . 1371) (IF 1410 . 1412) (ELSE 1426 . 1430))
+    )
+   (semanticdb-table "types.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Define names for all type symbols known in the standard interpreter.
+
+Types that are part of optional modules (e.g. array) are not listed.
+\"\"\"" code nil nil [1 146])
+            ("sys" include nil nil [147 157])
+            ("NoneType" variable nil nil [408 429])
+            ("TypeType" variable nil nil [430 445])
+            ("ObjectType" variable nil nil [446 465])
+            ("IntType" variable nil nil [467 480])
+            ("LongType" variable nil nil [481 496])
+            ("FloatType" variable nil nil [497 514])
+            ("BooleanType" variable nil nil [515 533])
+            ("try" code nil nil [534 592])
+            ("StringType" variable nil nil [593 609])
+            ("try" code nil nil [801 926])
+            ("BufferType" variable nil nil [927 946])
+            ("TupleType" variable nil nil [948 965])
+            ("ListType" variable nil nil [966 981])
+            ("DictType" variable nil nil [982 1014])
+            ("_f" function nil nil [1016 1031])
+            ("FunctionType" variable nil nil [1031 1054])
+            ("LambdaType" variable nil nil [1055 1086])
+            ("CodeType" variable nil nil [1118 1147])
+            ("_g" function nil nil [1149 1171])
+            ("GeneratorType" variable nil nil [1171 1197])
+            ("_C" type
+               (:members 
+                  ( ("_m" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1220 1224]))                          )
+                        (reparse-symbol indented_block_body) [1213 1232]))                  
+                :type "class")
+                nil [1199 1232])
+            ("ClassType" variable nil nil [1232 1252])
+            ("UnboundMethodType" variable nil nil [1253 1284])
+            ("_x" variable nil nil [1314 1323])
+            ("InstanceType" variable nil nil [1324 1347])
+            ("MethodType" variable nil nil [1348 1372])
+            ("BuiltinFunctionType" variable nil nil [1374 1405])
+            ("BuiltinMethodType" variable nil nil [1406 1441])
+            ("ModuleType" variable nil nil [1477 1499])
+            ("FileType" variable nil nil [1500 1515])
+            ("XRangeType" variable nil nil [1516 1535])
+            ("try" code nil nil [1537 1681])
+            ("SliceType" variable nil nil [1682 1699])
+            ("EllipsisType" variable nil nil [1700 1729])
+            ("DictProxyType" variable nil nil [1731 1770])
+            ("NotImplementedType" variable nil nil [1771 1812])
+            ("GetSetDescriptorType" variable nil nil [1866 1917])
+            ("MemberDescriptorType" variable nil nil [1918 1972])
+            ("del" code nil nil [1974 1997]))          
+    :file "types.py"
+    :pointmax 2041
+    :fsize 2040
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "os.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("r\"\"\"OS routines for Mac, NT, or Posix depending on what system we're on.
+
+This exports:
+  - all functions from posix, nt, os2, or ce, e.g. unlink, stat, etc.
+  - os.path is one of the modules posixpath, or ntpath
+  - os.name is 'posix', 'nt', 'os2', 'ce' or 'riscos'
+  - os.curdir is a string representing the current directory ('.' or ':')
+  - os.pardir is a string representing the parent directory ('..' or '::')
+  - os.sep is the (or a most common) pathname separator ('/' or ':' or '\\\\')
+  - os.extsep is the extension separator ('.' or '/')
+  - os.altsep is the alternate pathname separator (None or '/')
+  - os.pathsep is the component separator used in $PATH etc
+  - os.linesep is the line separator in text files ('\\r' or '\\n' or '\\r\\n')
+  - os.defpath is the default search path for executables
+  - os.devnull is the file path of the null device ('/dev/null', etc.)
+
+Programs that import and use 'os' stand a better chance of being
+portable between different platforms.  Of course, they must then
+only use functions that are defined by all platforms (e.g., unlink
+and opendir), and leave all pathname manipulation to os.path
+(e.g., split and join).
+\"\"\"" code nil nil [1 1163])
+            ("sys" include nil nil [1169 1186])
+            ("errno" include nil nil [1169 1186])
+            ("_names" variable nil nil [1188 1221])
+            ("__all__" variable nil nil [1271 1446])
+            ("_get_exports_list" function (:arguments 
+              ( ("module" variable nil (reparse-symbol function_parameters) [1470 1476]))              ) nil [1448 1606])
+            ("if" code nil nil [1607 3137])
+            ("sys" variable nil nil [3138 3167])
+            ("" code nil nil [3188 3256])
+            ("del" code nil nil [3258 3268])
+            ("SEEK_SET" variable nil nil [3390 3402])
+            ("SEEK_CUR" variable nil nil [3403 3415])
+            ("SEEK_END" variable nil nil [3416 3428])
+            ("makedirs" function
+               (:documentation "makedirs(path [, mode=0777])
+
+    Super-mkdir; create a leaf directory and all intermediate ones.
+    Works like mkdir, except that any intermediate path segment (not
+    just the rightmost) will be created if it does not exist.  This is
+    recursive.
+
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3538 3542])
+                    ("mode" variable nil (reparse-symbol function_parameters) [3544 3548]))                  )
+                nil [3525 4277])
+            ("removedirs" function
+               (:documentation "removedirs(path)
+
+    Super-rmdir; remove a leaf directory and all empty intermediate
+    ones.  Works like rmdir except that, if the leaf directory is
+    successfully removed, directories corresponding to rightmost path
+    segments will be pruned away until either the whole path is
+    consumed or an error occurs.  Errors during this latter phase are
+    ignored -- they generally mean that a directory was not empty.
+
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4293 4297]))                  )
+                nil [4278 4984])
+            ("renames" function
+               (:documentation "renames(old, new)
+
+    Super-rename; create directories as necessary and delete any left
+    empty.  Works like rename, except creation of any intermediate
+    directories needed to make the new pathname good is attempted
+    first.  After the rename, directories corresponding to rightmost
+    path segments of the old name will be pruned way until either the
+    whole path is consumed or a nonempty directory is found.
+
+    Note: this function can fail with the new directory structure made
+    if you lack permissions needed to unlink the leaf directory or
+    file.
+
+    "
+                :arguments 
+                  ( ("old" variable nil (reparse-symbol function_parameters) [4997 5000])
+                    ("new" variable nil (reparse-symbol function_parameters) [5002 5005]))                  )
+                nil [4985 5856])
+            ("__all__" code nil nil [5857 5910])
+            ("walk" function
+               (:documentation "Directory tree generator.
+
+    For each directory in the directory tree rooted at top (including top
+    itself, but excluding '.' and '..'), yields a 3-tuple
+
+        dirpath, dirnames, filenames
+
+    dirpath is a string, the path to the directory.  dirnames is a list of
+    the names of the subdirectories in dirpath (excluding '.' and '..').
+    filenames is a list of the names of the non-directory files in dirpath.
+    Note that the names in the lists are just names, with no path components.
+    To get a full path (which begins with top) to a file or directory in
+    dirpath, do os.path.join(dirpath, name).
+
+    If optional arg 'topdown' is true or not specified, the triple for a
+    directory is generated before the triples for any of its subdirectories
+    (directories are generated top down).  If topdown is false, the triple
+    for a directory is generated after the triples for all of its
+    subdirectories (directories are generated bottom up).
+
+    When topdown is true, the caller can modify the dirnames list in-place
+    (e.g., via del or slice assignment), and walk will only recurse into the
+    subdirectories whose names remain in dirnames; this can be used to prune
+    the search, or to impose a specific order of visiting.  Modifying
+    dirnames when topdown is false is ineffective, since the directories in
+    dirnames have already been generated by the time dirnames itself is
+    generated.
+
+    By default errors from the os.listdir() call are ignored.  If
+    optional arg 'onerror' is specified, it should be a function; it
+    will be called with one argument, an os.error instance.  It can
+    report the error to continue with the walk, or raise the exception
+    to abort the walk.  Note that the filename is available as the
+    filename attribute of the exception object.
+
+    By default, os.walk does not follow symbolic links to subdirectories on
+    systems that support them.  In order to get this functionality, set the
+    optional argument 'followlinks' to true.
+
+    Caution:  if you pass a relative pathname for top, don't change the
+    current working directory between resumptions of walk.  walk never
+    changes the current directory, and assumes that the client doesn't
+    either.
+
+    Example:
+
+    import os
+    from os.path import join, getsize
+    for root, dirs, files in os.walk('python/Lib/email'):
+        print root, \"consumes\",
+        print sum([getsize(join(root, name)) for name in files]),
+        print \"bytes in\", len(files), \"non-directory files\"
+        if 'CVS' in dirs:
+            dirs.remove('CVS')  # don't visit CVS directories
+    "
+                :arguments 
+                  ( ("top" variable nil (reparse-symbol function_parameters) [5921 5924])
+                    ("topdown" variable nil (reparse-symbol function_parameters) [5926 5933])
+                    ("onerror" variable nil (reparse-symbol function_parameters) [5940 5947])
+                    ("followlinks" variable nil (reparse-symbol function_parameters) [5954 5965]))                  )
+                nil [5912 9693])
+            ("__all__" code nil nil [9694 9716])
+            ("try" code nil nil [9758 9810])
+            ("execl" function
+               (:documentation "execl(file, *args)
+
+    Execute the executable file with argument list args, replacing the
+    current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [9821 9825])
+                    ("args" variable nil (reparse-symbol function_parameters) [9827 9832]))                  )
+                nil [9811 9980])
+            ("execle" function
+               (:documentation "execle(file, *args, env)
+
+    Execute the executable file with argument list args and
+    environment env, replacing the current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [9992 9996])
+                    ("args" variable nil (reparse-symbol function_parameters) [9998 10003]))                  )
+                nil [9981 10207])
+            ("execlp" function
+               (:documentation "execlp(file, *args)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args, replacing the current process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10219 10223])
+                    ("args" variable nil (reparse-symbol function_parameters) [10225 10230]))                  )
+                nil [10208 10416])
+            ("execlpe" function
+               (:documentation "execlpe(file, *args, env)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args and environment env, replacing the current
+    process. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10429 10433])
+                    ("args" variable nil (reparse-symbol function_parameters) [10435 10440]))                  )
+                nil [10417 10686])
+            ("execvp" function
+               (:documentation "execvp(file, args)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args, replacing the current process.
+    args may be a list or tuple of strings. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10698 10702])
+                    ("args" variable nil (reparse-symbol function_parameters) [10704 10708]))                  )
+                nil [10687 10939])
+            ("execvpe" function
+               (:documentation "execvpe(file, args, env)
+
+    Execute the executable file (which is searched for along $PATH)
+    with argument list args and environment env , replacing the
+    current process.
+    args may be a list or tuple of strings. "
+                :arguments 
+                  ( ("file" variable nil (reparse-symbol function_parameters) [10952 10956])
+                    ("args" variable nil (reparse-symbol function_parameters) [10958 10962])
+                    ("env" variable nil (reparse-symbol function_parameters) [10964 10967]))                  )
+                nil [10940 11234])
+            ("__all__" code nil nil [11235 11307])
+            ("_execvpe" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [11322 11326])
+                ("args" variable nil (reparse-symbol function_parameters) [11328 11332])
+                ("env" variable nil (reparse-symbol function_parameters) [11334 11337]))              ) nil [11309 12177])
+            ("try" code nil nil [12239 16448])
+            ("getenv" function
+               (:documentation "Get an environment variable, return None if it doesn't exist.
+    The optional second argument can specify an alternate default."
+                :arguments 
+                  ( ("key" variable nil (reparse-symbol function_parameters) [16460 16463])
+                    ("default" variable nil (reparse-symbol function_parameters) [16465 16472]))                  )
+                nil [16449 16656])
+            ("__all__" code nil nil [16656 16680])
+            ("_exists" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [16694 16698]))              ) nil [16682 16730])
+            ("if" code nil nil [16774 19677])
+            ("if" code nil nil [19678 20675])
+            ("if" code nil nil [20677 21783])
+            ("if" code nil nil [21817 25083])
+            ("copy_reg" include nil nil [25084 25112])
+            ("_make_stat_result" function (:arguments 
+              ( ("tup" variable nil (reparse-symbol function_parameters) [25136 25139])
+                ("dict" variable nil (reparse-symbol function_parameters) [25141 25145]))              ) nil [25114 25182])
+            ("_pickle_stat_result" function (:arguments 
+              ( ("sr" variable nil (reparse-symbol function_parameters) [25207 25209]))              ) nil [25183 25284])
+            ("try" code nil nil [25285 25419])
+            ("_make_statvfs_result" function (:arguments 
+              ( ("tup" variable nil (reparse-symbol function_parameters) [25445 25448])
+                ("dict" variable nil (reparse-symbol function_parameters) [25450 25454]))              ) nil [25420 25494])
+            ("_pickle_statvfs_result" function (:arguments 
+              ( ("sr" variable nil (reparse-symbol function_parameters) [25522 25524]))              ) nil [25495 25602])
+            ("try" code nil nil [25603 25770]))          
+    :file "os.py"
+    :pointmax 25770
+    :fsize 25769
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hashlib.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("__doc__" variable nil nil [122 2057])
+            ("__always_supported" variable nil nil [2169 2245])
+            ("algorithms" variable nil nil [2247 2278])
+            ("__all__" code nil nil [2280 2332])
+            ("__get_builtin_constructor" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [2365 2369]))              ) nil [2335 3201])
+            ("__get_openssl_constructor" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [3233 3237]))              ) nil [3203 3610])
+            ("__py_new" function
+               (:documentation "new(name, string='') - Return a new hashing object using the named algorithm;
+    optionally initialized with a string.
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3625 3629])
+                    ("string" variable nil (reparse-symbol function_parameters) [3631 3637]))                  )
+                nil [3612 3829])
+            ("__hash_new" function
+               (:documentation "new(name, string='') - Return a new hashing object using the named algorithm;
+    optionally initialized with a string.
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [3846 3850])
+                    ("string" variable nil (reparse-symbol function_parameters) [3852 3858]))                  )
+                nil [3831 4391])
+            ("try" code nil nil [4393 4564])
+            ("for" code nil nil [4565 4892])
+            ("del" code nil nil [4912 4959])
+            ("del" code nil nil [4960 5011]))          
+    :file "hashlib.py"
+    :pointmax 5012
+    :fsize 5011
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "linecache.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Cache lines from files.
+
+This is intended to read lines from modules imported -- hence if a filename
+is not found, it will look down the module search path for a file by
+that name.
+\"\"\"" code nil nil [1 188])
+            ("sys" include nil nil [190 200])
+            ("os" include nil nil [201 210])
+            ("__all__" variable nil nil [212 261])
+            ("getline" function (:arguments 
+              ( ("filename" variable nil (reparse-symbol function_parameters) [275 283])
+                ("lineno" variable nil (reparse-symbol function_parameters) [285 291])
+                ("module_globals" variable nil (reparse-symbol function_parameters) [293 307]))              ) nil [263 455])
+            ("cache" variable nil nil [470 480])
+            ("clearcache" function (:documentation "Clear the cache entirely.") nil [495 582])
+            ("getlines" function
+               (:documentation "Get the lines for a file from the cache.
+    Update the cache if it doesn't contain an entry for this file already."
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [597 605])
+                    ("module_globals" variable nil (reparse-symbol function_parameters) [607 621]))                  )
+                nil [584 879])
+            ("checkcache" function
+               (:documentation "Discard cache entries that are out of date.
+    (This is not checked upon each call!)"
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [896 904]))                  )
+                nil [881 1572])
+            ("updatecache" function
+               (:documentation "Update a cache entry and return its list of lines.
+    If something's wrong, print a message, discard the cache entry,
+    and return an empty list."
+                :arguments 
+                  ( ("filename" variable nil (reparse-symbol function_parameters) [1590 1598])
+                    ("module_globals" variable nil (reparse-symbol function_parameters) [1600 1614]))                  )
+                nil [1574 4119]))          
+    :file "linecache.py"
+    :pointmax 4119
+    :fsize 4118
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "copy_reg.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("\"\"\"Helper to provide extensibility for pickle/cPickle.
+
+This is only useful to add pickle support for extension types defined in
+C, not for instances of user-defined classes.
+\"\"\"" code nil nil [1 179])
+            ("types" include nil nil [181 222])
+            ("__all__" variable nil nil [224 332])
+            ("dispatch_table" variable nil nil [334 353])
+            ("pickle" function (:arguments 
+              ( ("ob_type" variable nil (reparse-symbol function_parameters) [366 373])
+                ("pickle_function" variable nil (reparse-symbol function_parameters) [375 390])
+                ("constructor_ob" variable nil (reparse-symbol function_parameters) [392 406]))              ) nil [355 886])
+            ("constructor" function (:arguments 
+              ( ("object" variable nil (reparse-symbol function_parameters) [903 909]))              ) nil [887 1009])
+            ("try" code nil nil [1068 1233])
+            ("_reconstructor" function (:arguments 
+              ( ("cls" variable nil (reparse-symbol function_parameters) [1295 1298])
+                ("base" variable nil (reparse-symbol function_parameters) [1300 1304])
+                ("state" variable nil (reparse-symbol function_parameters) [1306 1311]))              ) nil [1276 1518])
+            ("_HEAPTYPE" code nil nil [1519 1535])
+            ("_reduce_ex" function
+               (:parent "dummy"
+                :arguments 
+                  ( ("self" variable nil (reparse-symbol function_parameters) [1614 1618])
+                    ("proto" variable nil (reparse-symbol function_parameters) [1620 1625]))                  )
+                nil [1599 2561])
+            ("__newobj__" function (:arguments 
+              ( ("cls" variable nil (reparse-symbol function_parameters) [2616 2619])
+                ("args" variable nil (reparse-symbol function_parameters) [2621 2626]))              ) nil [2601 2664])
+            ("_slotnames" function
+               (:documentation "Return a list of slot names for a given class.
+
+    This needs to find slots defined by the class and its bases, so we
+    can't simply return the __slots__ attribute.  We must walk down
+    the Method Resolution Order and concatenate the __slots__ of each
+    class found there.  (This assumes classes don't modify their
+    __slots__ attribute to misrepresent their slots after the class is
+    defined.)
+    "
+                :arguments 
+                  ( ("cls" variable nil (reparse-symbol function_parameters) [2680 2683]))                  )
+                nil [2665 4346])
+            ("_extension_registry" variable nil nil [4828 4852])
+            ("_inverted_registry" variable nil nil [4882 4905])
+            ("_extension_cache" variable nil nil [4936 4957])
+            ("add_extension" function
+               (:documentation "Register an extension code."
+                :arguments 
+                  ( ("module" variable nil (reparse-symbol function_parameters) [5132 5138])
+                    ("name" variable nil (reparse-symbol function_parameters) [5140 5144])
+                    ("code" variable nil (reparse-symbol function_parameters) [5146 5150]))                  )
+                nil [5114 5861])
+            ("remove_extension" function
+               (:documentation "Unregister an extension code.  For testing only."
+                :arguments 
+                  ( ("module" variable nil (reparse-symbol function_parameters) [5883 5889])
+                    ("name" variable nil (reparse-symbol function_parameters) [5891 5895])
+                    ("code" variable nil (reparse-symbol function_parameters) [5897 5901]))                  )
+                nil [5862 6321])
+            ("clear_extension_cache" function nil nil [6322 6380]))          
+    :file "copy_reg.py"
+    :pointmax 6801
+    :fsize 6800
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "re.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "re.py"
+    :pointmax 13071
+    :fsize 13070
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "subprocess.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "subprocess.py"
+    :pointmax 59047
+    :fsize 59046
+    :lastmodtime '(21294 8926 0 0)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!lib!python2.7!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

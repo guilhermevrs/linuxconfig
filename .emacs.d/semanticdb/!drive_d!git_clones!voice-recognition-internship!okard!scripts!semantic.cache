@@ -1,0 +1,104 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "app.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("_okRecognizer" variable nil nil [1 92])
+            ("_okDB" variable nil nil [68 73])
+            ("_okNeural" variable nil nil [53 62])
+            ("_okBrain" variable nil nil [39 47])
+            ("_okHeuristics" variable nil nil [20 33])
+            ("_okSpeech" variable nil nil [5 93])
+            ("finalTranscript" variable nil nil [95 115])
+            ("finalConfidence" variable nil nil [116 136])
+            ("iterations" variable nil nil [137 152])
+            ("trainDataNumber" variable (:default-value "0") nil [154 178])
+            ("startSpeech" function nil nil [199 332])
+            ("stopSpeech" function nil nil [334 504])
+            ("resultSpeech" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [528 533]))              ) nil [506 843])
+            ("calculateMetaphone" function nil nil [867 1066])
+            ("calculateLevenshtein" function nil nil [1068 1382])
+            ("compare" function nil nil [1384 1813])
+            ("getNetConfiguration" function nil nil [1842 2050])
+            ("getNeuralCode" function nil nil [2052 2519])
+            ("loadNetConfiguration" function nil nil [2521 2932])
+            ("trainNetwork" function nil nil [2934 3070])
+            ("getTrainingData" function nil nil [3072 4319])
+            ("runNetwork" function nil nil [4321 4558])
+            ("recognize" function nil nil [4560 4912])
+            ("generateTrainningData" function (:arguments 
+              ( ("input" variable nil (reparse-symbol FormalParameterList) [4945 4950]))              ) nil [4914 5661]))          
+      :file "app.js"
+      :pointmax 5885
+      :fsize 6064
+      :lastmodtime '(21797 11953 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "OKRecognizer.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKRecognizer.js"
+      :pointmax 22541
+      :fsize 23078
+      :lastmodtime '(21843 11940 0 0)
+      :unmatched-syntax '((FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534) (FUNCTION 484 . 492) (PAREN_BLOCK 492 . 534)))
+    (semanticdb-table "OKNeural.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKNeural.js"
+      :pointmax 3928
+      :fsize 4122
+      :lastmodtime '(21803 58308 0 0)
+      :unmatched-syntax '((FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582) (FUNCTION 565 . 573) (PAREN_BLOCK 573 . 582)))
+    (semanticdb-table "OKHeuristics.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKHeuristics.js"
+      :pointmax 6319
+      :fsize 6521
+      :lastmodtime '(21786 44756 0 0)
+      :unmatched-syntax '((FUNCTION 95 . 103) (PAREN_BLOCK 103 . 105)))
+    (semanticdb-table "OKNeuralWorker.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("loadScript" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [271 276]))              ) nil [251 388])
+            ("train" function (:arguments 
+              ( ("event" variable nil (reparse-symbol FormalParameterList) [405 410]))              ) nil [390 942])
+            ("postProgress" function (:arguments 
+              ( ("progress" variable nil (reparse-symbol FormalParameterList) [966 974]))              ) nil [944 1053]))          
+      :file "OKNeuralWorker.js"
+      :pointmax 1054
+      :fsize 923
+      :lastmodtime '(21805 1704 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "OKSpeech.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKSpeech.js"
+      :pointmax 6039
+      :fsize 6225
+      :lastmodtime '(21816 44225 0 0)
+      :unmatched-syntax '((FUNCTION 1224 . 1232) (PAREN_BLOCK 1232 . 1241) (FUNCTION 1224 . 1232) (PAREN_BLOCK 1232 . 1241) (FUNCTION 1224 . 1232) (PAREN_BLOCK 1232 . 1241)))
+    (semanticdb-table "brain-0.6.0.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "brain-0.6.0.js"
+      :pointmax 50840
+      :fsize 50839
+      :lastmodtime '(21761 25156 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "OKPhonetics.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "OKPhonetics.js"
+      :pointmax 4644
+      :fsize 4763
+      :lastmodtime '(21843 11836 0 0)
+      :unmatched-syntax '((FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193) (FUNCTION 157 . 165) (PAREN_BLOCK 165 . 193))))
+  :file "!drive_d!git_clones!voice-recognition-internship!okard!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

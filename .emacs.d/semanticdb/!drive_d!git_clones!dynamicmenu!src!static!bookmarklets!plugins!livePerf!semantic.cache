@@ -1,0 +1,24 @@
+;; Object livePerf/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "livePerf/"
+  :tables
+  (list
+    (semanticdb-table "LivePerfScript.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "LivePerfScript.js"
+      :pointmax 51587
+      :fsize 51586
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 25 . 51586)))
+    (semanticdb-table "LivePerfIOFilter.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "LivePerfIOFilter.js"
+      :pointmax 2238
+      :fsize 2237
+      :lastmodtime '(21776 3625 0 0)
+      :unmatched-syntax '((PAREN_BLOCK 21 . 2237))))
+  :file "!drive_d!git_clones!dynamicmenu!src!static!bookmarklets!plugins!livePerf!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

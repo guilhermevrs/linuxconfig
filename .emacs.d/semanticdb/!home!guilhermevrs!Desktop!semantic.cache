@@ -1,0 +1,18 @@
+;; Object Desktop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Desktop/"
+  :tables (list 
+   (semanticdb-table "emacs_snippet.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "emacs_snippet.js"
+    :pointmax 148
+    :fsize 147
+    :lastmodtime '(22062 16317 983931 575000)
+    :unmatched-syntax '(($EOI 10 . 10) (BRACE_BLOCK 8 . 25) (VARIABLE 26 . 30) (STRING 31 . 48) ($EOI 48 . 48) (BRACE_BLOCK 8 . 21) (STRING 23 . 40) ($EOI 40 . 40) (BRACE_BLOCK 8 . 25) (VARIABLE 26 . 30) ...)
+    )
+   )
+  :file "!home!guilhermevrs!Desktop!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

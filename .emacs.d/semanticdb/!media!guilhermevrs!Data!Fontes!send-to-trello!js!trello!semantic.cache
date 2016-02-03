@@ -1,0 +1,27 @@
+;; Object trello/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trello/"
+  :tables (list 
+   (semanticdb-table "TrelloService.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "TrelloService.js"
+    :pointmax 3540
+    :fsize 3540
+    :lastmodtime '(22034 59968 580025 100000)
+    :unmatched-syntax '((PAREN_BLOCK 77 . 3538) (DOT 69 . 70) (VARIABLE 36 . 43) (PAREN_BLOCK 50 . 68) (PAREN_BLOCK 77 . 3539) (DOT 69 . 70) (VARIABLE 36 . 43) (PAREN_BLOCK 50 . 68) (PAREN_BLOCK 78 . 3540) (DOT 70 . 71) (STRING 22 . 34) (VARIABLE 37 . 44) (PAREN_BLOCK 51 . 69))
+    )
+   (semanticdb-table "trello-api.js"
+    :major-mode 'js-mode
+    :tags nil
+    :file "trello-api.js"
+    :pointmax 3555
+    :fsize 4205
+    :lastmodtime '(22025 43413 532187 600000)
+    :unmatched-syntax '((PAREN_BLOCK 3552 . 3554) (PAREN_BLOCK 1 . 3552))
+    )
+   )
+  :file "!media!guilhermevrs!Data!Fontes!send-to-trello!js!trello!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

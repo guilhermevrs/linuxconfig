@@ -1,0 +1,47 @@
+;; Object recordrtc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "recordrtc/"
+  :tables
+  (list
+    (semanticdb-table "test_script.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("recordRTC" variable nil nil [1 15])
+            ("isFirefox" variable (:default-value "!!") nil [17 61])
+            ("startRecording" function nil nil [63 491])
+            ("stopRecording" function nil nil [494 748])
+            ("postFiles" function (:arguments 
+              ( ("audioDataURL" variable nil (reparse-symbol FormalParameterList) [770 782]))              ) nil [751 1122])
+            ("xhr" function (:arguments 
+              ( ("url" variable nil (reparse-symbol FormalParameterList) [1138 1141])
+                ("data" variable nil (reparse-symbol FormalParameterList) [1143 1147])
+                ("callback" variable nil (reparse-symbol FormalParameterList) [1149 1157]))              ) nil [1125 1493]))          
+      :file "test_script.js"
+      :pointmax 1494
+      :fsize 1541
+      :lastmodtime '(21731 28708 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "nodeserver.js"
+      :major-mode 'js-mode
+      :tags 
+        '( ("upload" function (:arguments 
+              ( ("request" variable nil (reparse-symbol FormalParameterList) [285 292])
+                ("response" variable nil (reparse-symbol FormalParameterList) [294 302]))              ) nil [269 423])
+            ("_upload" function (:arguments 
+              ( ("file" variable nil (reparse-symbol FormalParameterList) [443 447]))              ) nil [426 1066]))          
+      :file "nodeserver.js"
+      :pointmax 1480
+      :fsize 1534
+      :lastmodtime '(21731 28236 0 0)
+      :unmatched-syntax '((VAR 1283 . 1286) (PAREN_BLOCK 1306 . 1479) (VARIABLE 1253 . 1256) (PAREN_BLOCK 1261 . 1280) (VARIABLE 1068 . 1071) (PAREN_BLOCK 1075 . 1250) (VARIABLE 225 . 228) (PAREN_BLOCK 232 . 266) (VAR 184 . 187) (PAREN_BLOCK 208 . 223) (VAR 162 . 165) (PAREN_BLOCK 179 . 181) (VAR 128 . 131) (PAREN_BLOCK 149 . 160) (DOT 120 . 121) (PAREN_BLOCK 103 . 120) (COMMA 83 . 84) (PAREN_BLOCK 76 . 83) (COMMA 57 . 58) (PAREN_BLOCK 51 . 57) (COMMA 33 . 34) (PAREN_BLOCK 21 . 33)))
+    (semanticdb-table "config.js"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.js"
+      :pointmax 48
+      :fsize 49
+      :lastmodtime '(21731 24869 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_d!git_clones!voice-recognition-internship!api_testing!voice-capture!recordrtc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
