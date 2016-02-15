@@ -66,3 +66,15 @@ Videos
 .wireshark
 .Xauthority
 .xsession-errors
+
+# ATOM
+.apm
+compile-cache
+.gitignore
+init.coffee
+keymap.cson
+.node-gyp
+packages
+snippets.cson
+storage
+styles.less

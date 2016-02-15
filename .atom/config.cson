@@ -1,0 +1,12 @@
+"*":
+  core:
+    themes: [
+      "seti-ui"
+      "monokai-seti"
+    ]
+  editor:
+    invisibles: {}
+  "exception-reporting":
+    userId: "d2ea9f90-29e6-10ba-1773-8a046c2b6272"
+  welcome:
+    showOnStartup: false
