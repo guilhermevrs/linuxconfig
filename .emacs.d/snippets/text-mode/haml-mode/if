@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: if
-# author: Vicky Chijwani (vickychijwani@gmail.com)
-# --
-- if ${1:condition}
-  $0
